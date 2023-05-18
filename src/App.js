@@ -2,10 +2,21 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import './blocks/app.scss';
+import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <div className="app"></div>
+    <div className="page">
+      <Header />
+      <main className="main">
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
