@@ -7,23 +7,23 @@ import telegramIcon from '../images/telegram-icon.svg';
 import vkIcon from '../images/vk-icon.svg';
 import OrderButton from './OrderButton';
 
-export default function Hero() {
+export default function Main() {
   return (
     <div className="home">
       <Link className="home__logo link" to='/'>
         <img src={logo} alt="logo" className="home__logo-img" />
       </Link>
-      <Link className="home__link link" to='/'>
+      <Link className="home__link link" to='/services'>
         <p className="home__link-txt home__link-txt_services">
           Услуги
         </p>
       </Link>
-      <Link className="home__link link" to='/'>
+      <Link className="home__link link" to='/cases'>
         <p className="home__link-txt home__link-txt_cases">
           Кейсы
         </p>
       </Link>
-      <Link className="home__link link" to='/'>
+      <Link className="home__link link" to='/about'>
         <p className="home__link-txt home__link-txt_about">
           О нас
         </p>
@@ -47,7 +47,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <Link className="home__link link" to='/'>
+      <Link className="home__link link" to='/contacts'>
         <p className="home__link-txt">
           Контакты
         </p>

@@ -1,32 +1,13 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import { Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import logo from '../images/caps-logo.svg';
-import OrderButton from './OrderButton';
+import HeaderMenu from './HeaderMenu';
 
 export default function Header() {
 
   const projectsArr = ['СЗППК СПБ/РЖД', 'DEL ARTE', 'SPARTA', 'MK STROY', 'UNIQCKATE'];
-
-  const menuList = [
-    {
-      title: 'Услуги',
-      link: '/'
-    },
-    {
-      title: 'Кейсы',
-      link: '/'
-    },
-    {
-      title: 'О нас',
-      link: '/'
-    },
-    {
-      title: 'Контакты',
-      link: '/'
-    },
-  ]
+  const routesPaths = ['/services', '/cases', '/about', '/contacts'];
 
   return (
     <header className="header">
@@ -52,21 +33,11 @@ export default function Header() {
           </Marquee>
         </div>
       </div>
-      <div className="header__bottom">
-        <Link className="header__link" to='/'>
-          <img src={logo} alt="CAPS logo" className="header__logo" />
-        </Link>
-        <ul className="header__menu-list list">
-          {menuList.map((el) => (
-            <li key={el.title} className="header__menu-item">
-              <Link className="header__menu-link link" to={el.link}>
-                {el.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <OrderButton type={'button'} />
-      </div>
+      <Routes>
+        {routesPaths.map((path) => (
+          <Route path={path} element={<HeaderMenu />} key={path} />
+        ))}
+      </Routes>
     </header >
   )
 }
