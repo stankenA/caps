@@ -1,3 +1,13 @@
+@keyframes backgroundRotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .header {
   width: 100%;
 
@@ -54,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1280px;
+    width: var(--content-width);
     margin: 30px auto;
   }
 
@@ -86,6 +96,26 @@
     align-items: center;
     color: #000;
     cursor: pointer;
-    background: url(../images/header-button-background.png) no-repeat center / cover;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1440px;
+      height: 900px;
+      background: url(../images/header-button-background.png) no-repeat center / cover;
+      animation: backgroundRotation 20s infinite linear;
+    }
+  }
+
+  &__button-txt {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

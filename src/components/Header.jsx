@@ -3,6 +3,7 @@ import Marquee from 'react-fast-marquee';
 import { Link } from 'react-router-dom';
 
 import logo from '../images/caps-logo.svg';
+import OrderButton from './OrderButton';
 
 export default function Header() {
 
@@ -56,17 +57,15 @@ export default function Header() {
           <img src={logo} alt="CAPS logo" className="header__logo" />
         </Link>
         <ul className="header__menu-list list">
-          {
-            menuList.map((el) => (
-              <li key={el.title} className="header__menu-item">
-                <Link className="header__menu-link link" to={el.link}>
-                  {el.title}
-                </Link>
-              </li>
-            ))
-          }
+          {menuList.map((el) => (
+            <li key={el.title} className="header__menu-item">
+              <Link className="header__menu-link link" to={el.link}>
+                {el.title}
+              </Link>
+            </li>
+          ))}
         </ul>
-        <button type="button" className="header__button button">заказать</button>
+        <OrderButton type={'button'} />
       </div>
     </header >
   )

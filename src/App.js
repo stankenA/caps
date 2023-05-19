@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="page">
       <Header />
-      <main className="main">
+      <main className="wrapper">
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='*' element={<NotFoundPage />} />
