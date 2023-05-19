@@ -9,7 +9,7 @@ import OrderButton from './OrderButton';
 
 export default function Main() {
   return (
-    <div className="home">
+    <section className="home">
       <Link className="home__logo link" to='/'>
         <img src={logo} alt="logo" className="home__logo-img" />
       </Link>
@@ -71,6 +71,6 @@ export default function Main() {
           </p>
         </fieldset>
       </form>
-    </div>
+    </section>
   )
 }
