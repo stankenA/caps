@@ -9,7 +9,7 @@
   }
 
   &__live {
-    width: 224px;
+    min-width: 224px;
     height: 100%;
     background-color: #000;
     box-sizing: border-box;
@@ -29,11 +29,13 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
+    overflow: hidden;
   }
 
   &__marquee-list {
     display: flex;
     gap: 86px;
+    margin-right: 86px;
   }
 
   &__marquee-item {
@@ -46,5 +48,44 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    margin: 30px auto;
+  }
+
+  &__logo {
+    display: block;
+    width: 50px;
+    object-fit: cover;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 137px;
+  }
+
+  &__menu-link {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    width: 249px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+    background: url(../images/header-button-background.png) no-repeat center / cover;
   }
 }
