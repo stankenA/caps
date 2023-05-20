@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section className="services">
       <div className="services__info">
-        <h1 className="services__title">Ууслуги</h1>
+        <h1 className="services__title">Услуги</h1>
         <p className="services__txt">
           Узнайте о том, как группа друзей, воплощая мечты клиентов, воплотила свою. В 4-х актах рассказываем о себе и о том, как на свет появилось агентство CAPS.
         </p>
