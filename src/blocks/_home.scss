@@ -26,6 +26,78 @@
     justify-content: center;
     background-color: #000;
     border-radius: 10px;
+    transition: all .4s ease;
+    position: relative;
+    overflow: hidden;
+
+    &_services {
+      .home__link-txt {
+        background: var(--color-services-home);
+        @include text-fill-color;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/home-background-services.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &:hover .home__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+    }
+
+    &_cases {
+      .home__link-txt {
+        background: var(--color-cases-home);
+        @include text-fill-color;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/home-background-cases.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &:hover .home__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+    }
+
+    &_about {
+      .home__link-txt {
+        background: var(--color-about-home);
+        @include text-fill-color;
+      }
+
+      &:hover .home__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/home-background-about.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
   }
 
   &__link-txt {
@@ -35,33 +107,9 @@
     line-height: 40px;
     margin: 0;
     text-transform: uppercase;
-
-    &_services {
-      background: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(95.18% 125% at 4.82% 23.75%, #FD9CFF 7.61%, #AC8FFF 35.14%, #95F2FF 63.45%, #9EFFB4 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      background-blend-mode: screen, difference, normal;
-    }
-
-    &_cases {
-      background: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #C2FFF8 7.61%, #9FFFE8 35.14%, #FF7D7D 63.45%, #A7FAFF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      background-blend-mode: screen, difference, normal;
-    }
-
-    &_about {
-      background: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(76.14% 323.01% at 10.11% 28.24%, #FFA8CC 7.61%, #93E5FF 41.67%, #FFF599 66.67%, #FFA3A3 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      background-blend-mode: screen, difference, normal;
-    }
+    transition: all .4s ease;
+    position: relative;
+    z-index: 3;
   }
 
   &__info {

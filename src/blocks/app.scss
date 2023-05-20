@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;700;900&display=swap');
-@import url(../vendor/normalize.css);
+@import '../vendor/normalize.css';
 
-@import url(../blocks/common/_list.scss);
-@import url(../blocks/common/_link.scss);
-@import url(../blocks/common/_button.scss);
+@import '../blocks/utils/mixins';
+@import '../blocks/utils/keyframes';
+@import '../blocks/utils/variables';
 
-@import url(../blocks/_page.scss);
-@import url(../blocks/_wrapper.scss);
+@import '../blocks/common/list';
+@import '../blocks/common/link';
+@import '../blocks/common/button';
 
-@import url(../blocks/_header.scss);
-@import url(../blocks/_home.scss);
-@import url(../blocks/_footer.scss);
-@import url(../blocks/_services.scss);
+@import '../blocks/page';
+@import '../blocks/wrapper';
+
+@import '../blocks/header';
+@import '../blocks/home';
+@import '../blocks/footer';
+@import '../blocks/services';

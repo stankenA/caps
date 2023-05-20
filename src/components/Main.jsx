@@ -15,25 +15,25 @@ export default function Main() {
         <Link className="home__logo link" to='/'>
           <img src={logo} alt="logo" className="home__logo-img" />
         </Link>
-        <Link className="home__link link" to='/services'>
-          <p className="home__link-txt home__link-txt_services">
+        <Link className="home__link home__link_services link" to='/services'>
+          <p className="home__link-txt">
             Услуги
           </p>
         </Link>
-        <Link className="home__link link" to='/cases'>
-          <p className="home__link-txt home__link-txt_cases">
+        <Link className="home__link home__link_cases link" to='/cases'>
+          <p className="home__link-txt">
             Кейсы
           </p>
         </Link>
-        <Link className="home__link link" to='/about'>
-          <p className="home__link-txt home__link-txt_about">
+        <Link className="home__link home__link_about link" to='/about'>
+          <p className="home__link-txt">
             О нас
           </p>
         </Link>
         <div className="home__info">
           <Fade direction='up' cascade={true} triggerOnce>
             <Link className="home__info-link link" to='mailto:caps@suka.nahuy'>
-              caps@suka.nahuy
+              caps@dam.tati
             </Link>
             <Link className="home__info-link link" to='tel:+7-999-999-99-99'>
               +7 (999) 999-99-99

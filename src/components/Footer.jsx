@@ -55,7 +55,7 @@ export default function Footer() {
         <ul className="footer__container list">
           <li className="footer__item">
             <Link className="footer__link footer__link_contacts link" to='mailto:caps@suka.nahuy'>
-              caps@suka.nahuy
+              caps@dam.tati
             </Link>
           </li>
           <li className="footer__item">
