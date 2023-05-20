@@ -12,49 +12,61 @@ export default function ServicesMain() {
       </div>
       <ul className="services__content list">
         <li className="services__item">
-          <Link className="services__link link" to='/services/production'>
-            Разра <br />
-            ботка
-            сай <br />
-            тов
+          <Link className="services__link services__link_development link" to='/services/development'>
+            <p className="services__link-txt">
+              Разра <br />
+              ботка
+              сай <br />
+              тов
+            </p>
           </Link>
         </li>
         <li className="services__item">
-          <Link className="services__link link">
-            Прод <br />
-            ви <br />
-            же <br />
-            ние
+          <Link className="services__link services__link_promotion link">
+            <p className="services__link-txt">
+              Прод <br />
+              ви <br />
+              же <br />
+              ние
+            </p>
           </Link>
         </li>
         <li className="services__item">
-          <Link className="services__link link">
-            Ди <br />
-            за <br />
-            йн
+          <Link className="services__link services__link_design link">
+            <p className="services__link-txt">
+              Ди <br />
+              за <br />
+              йн
+            </p>
           </Link>
         </li>
         <li className="services__item">
-          <Link className="services__link link">
-            Про <br />
-            дак <br />
-            шн
+          <Link className="services__link services__link_production link">
+            <p className="services__link-txt">
+              Про <br />
+              дак <br />
+              шн
+            </p>
           </Link>
         </li>
         <li className="services__item">
-          <Link className="services__link link">
-            Месс <br />
-            енд <br />
-            жер <br />
-            боты
+          <Link className="services__link services__link_bots link">
+            <p className="services__link-txt">
+              Месс <br />
+              енд <br />
+              жер <br />
+              боты
+            </p>
           </Link>
         </li>
         <li className="services__item">
-          <Link className="services__link link">
-            Моби <br />
-            льные <br />
-            прило <br />
-            жения
+          <Link className="services__link services__link_mobile link">
+            <p className="services__link-txt">
+              Моби <br />
+              льные <br />
+              прило <br />
+              жения
+            </p>
           </Link>
         </li>
       </ul>

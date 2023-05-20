@@ -43,13 +43,166 @@
     padding: 32px;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &_development {
+      .services__link-txt {
+        background: var(--color-development);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/header-button-background.png) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &_promotion {
+      .services__link-txt {
+        background: var(--color-promotion);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/home-background-about.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &_design {
+      .services__link-txt {
+        background: var(--color-design);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/home-background-cases.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &_production {
+      .services__link-txt {
+        background: var(--color-production);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/green-violet-background.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &_bots {
+      .services__link-txt {
+        background: var(--color-bots);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/violet-red-background.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &_mobile {
+      .services__link-txt {
+        background: var(--color-mobile);
+        @include text-fill-color;
+      }
+
+      &:hover .services__link-txt {
+        -webkit-text-fill-color: #000;
+      }
+
+      &::after {
+        @include props-for-background-rotation;
+        background: url(../images/green-grey-background.jpg) no-repeat center;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__link-txt {
+    display: block;
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color: #000;
+    margin: 0;
+    transition: all .4s ease;
+    position: relative;
+    z-index: 3;
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
-    border-radius: 10px;
   }
 }
