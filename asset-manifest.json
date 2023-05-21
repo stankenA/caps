@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/caps/static/css/main.f2f7faa7.css",
+    "main.js": "/caps/static/js/main.088a52d8.js",
+    "static/media/green-violet-background.jpg": "/caps/static/media/green-violet-background.50fefe77ce6a7dedfce8.jpg",
+    "static/media/home-background-cases.jpg": "/caps/static/media/home-background-cases.6c63bfa721b553c18db3.jpg",
+    "static/media/header-button-background.png": "/caps/static/media/header-button-background.f39295f53e83c63f50e5.png",
+    "static/media/home-background-services.jpg": "/caps/static/media/home-background-services.f39295f53e83c63f50e5.jpg",
+    "static/media/violet-red-background.jpg": "/caps/static/media/violet-red-background.ae84f201e54d13422975.jpg",
+    "static/media/home-background-about.jpg": "/caps/static/media/home-background-about.378baadd52f24fdf2f74.jpg",
+    "static/media/green-grey-background.jpg": "/caps/static/media/green-grey-background.a2d0afe78f92ac46fa3c.jpg",
+    "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
+    "static/media/caps-logo.svg": "/caps/static/media/caps-logo.b1a53beb6dc8f85f59d98efebc772155.svg",
+    "static/media/whatsapp-icon-black.svg": "/caps/static/media/whatsapp-icon-black.9a552db1c21d2c73452f.svg",
+    "static/media/whatsapp-icon.svg": "/caps/static/media/whatsapp-icon.7634407aac8cd36a69ec1b0db520d6ee.svg",
+    "static/media/vk-icon-black.svg": "/caps/static/media/vk-icon-black.b977aaf2821eab30164d.svg",
+    "static/media/vk-icon.svg": "/caps/static/media/vk-icon.d574c4e9ecb4810cb8462140d2670b00.svg",
+    "static/media/telegram-icon-black.svg": "/caps/static/media/telegram-icon-black.ec8b24ebac277265032f.svg",
+    "static/media/telegram-icon.svg": "/caps/static/media/telegram-icon.348add5ac2e31b01592e3e43d6187f79.svg",
+    "index.html": "/caps/index.html",
+    "main.f2f7faa7.css.map": "/caps/static/css/main.f2f7faa7.css.map",
+    "main.088a52d8.js.map": "/caps/static/js/main.088a52d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2f7faa7.css",
+    "static/js/main.088a52d8.js"
+  ]
+}
