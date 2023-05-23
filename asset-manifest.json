@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.f2f7faa7.css",
-    "main.js": "/caps/static/js/main.c4473046.js",
+    "main.css": "/caps/static/css/main.bfe76ead.css",
+    "main.js": "/caps/static/js/main.fcd11fd6.js",
     "static/media/green-violet-background.jpg": "/caps/static/media/green-violet-background.50fefe77ce6a7dedfce8.jpg",
     "static/media/home-background-cases.jpg": "/caps/static/media/home-background-cases.6c63bfa721b553c18db3.jpg",
     "static/media/header-button-background.png": "/caps/static/media/header-button-background.f39295f53e83c63f50e5.png",
@@ -18,11 +18,13 @@
     "static/media/telegram-icon-black.svg": "/caps/static/media/telegram-icon-black.ec8b24ebac277265032f.svg",
     "static/media/telegram-icon.svg": "/caps/static/media/telegram-icon.348add5ac2e31b01592e3e43d6187f79.svg",
     "index.html": "/caps/index.html",
-    "main.f2f7faa7.css.map": "/caps/static/css/main.f2f7faa7.css.map",
-    "main.c4473046.js.map": "/caps/static/js/main.c4473046.js.map"
+    "static/media/white-arrow.svg": "/caps/static/media/white-arrow.969fe18bda059ed039f1.svg",
+    "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
+    "main.bfe76ead.css.map": "/caps/static/css/main.bfe76ead.css.map",
+    "main.fcd11fd6.js.map": "/caps/static/js/main.fcd11fd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2f7faa7.css",
-    "static/js/main.c4473046.js"
+    "static/css/main.bfe76ead.css",
+    "static/js/main.fcd11fd6.js"
   ]
 }
