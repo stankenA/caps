@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.bfe76ead.css",
-    "main.js": "/caps/static/js/main.fcd11fd6.js",
+    "main.css": "/caps/static/css/main.c858156e.css",
+    "main.js": "/caps/static/js/main.0a687a9e.js",
     "static/media/green-violet-background.jpg": "/caps/static/media/green-violet-background.50fefe77ce6a7dedfce8.jpg",
     "static/media/home-background-cases.jpg": "/caps/static/media/home-background-cases.6c63bfa721b553c18db3.jpg",
     "static/media/header-button-background.png": "/caps/static/media/header-button-background.f39295f53e83c63f50e5.png",
@@ -9,6 +9,7 @@
     "static/media/violet-red-background.jpg": "/caps/static/media/violet-red-background.ae84f201e54d13422975.jpg",
     "static/media/home-background-about.jpg": "/caps/static/media/home-background-about.378baadd52f24fdf2f74.jpg",
     "static/media/green-grey-background.jpg": "/caps/static/media/green-grey-background.a2d0afe78f92ac46fa3c.jpg",
+    "static/media/caps-logo-white.svg": "/caps/static/media/caps-logo-white.2e6a2216770edafe67f201be783fa651.svg",
     "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
     "static/media/caps-logo.svg": "/caps/static/media/caps-logo.b1a53beb6dc8f85f59d98efebc772155.svg",
     "static/media/whatsapp-icon-black.svg": "/caps/static/media/whatsapp-icon-black.9a552db1c21d2c73452f.svg",
@@ -20,11 +21,11 @@
     "index.html": "/caps/index.html",
     "static/media/white-arrow.svg": "/caps/static/media/white-arrow.969fe18bda059ed039f1.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
-    "main.bfe76ead.css.map": "/caps/static/css/main.bfe76ead.css.map",
-    "main.fcd11fd6.js.map": "/caps/static/js/main.fcd11fd6.js.map"
+    "main.c858156e.css.map": "/caps/static/css/main.c858156e.css.map",
+    "main.0a687a9e.js.map": "/caps/static/js/main.0a687a9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfe76ead.css",
-    "static/js/main.fcd11fd6.js"
+    "static/css/main.c858156e.css",
+    "static/js/main.0a687a9e.js"
   ]
 }
