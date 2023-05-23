@@ -1,11 +1,20 @@
 .services {
   width: 100%;
-  padding: 20px;
+  min-height: 480px;
   box-sizing: border-box;
   border: 3px solid #000000;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 
   &__info {
     width: 400px;
@@ -18,6 +27,11 @@
     font-size: 48px;
     line-height: 60px;
     margin: 0 0 46px;
+
+    &_white {
+      color: #fff;
+      margin-bottom: 111px;
+    }
   }
 
   &__txt {
@@ -25,6 +39,11 @@
     font-size: 14px;
     line-height: 180%;
     margin: 0;
+
+    &_white {
+      color: #fff;
+      max-width: 264px;
+    }
   }
 
   &__content {
@@ -52,6 +71,7 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 
     &_development {
       .services__link-txt {
@@ -204,5 +224,220 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+  }
+
+  &__card {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 3;
+    transition: all 1s ease;
+    transform: translateX(100%);
+
+    &_active {
+      transform: translateX(0);
+    }
+  }
+
+  &__card-left {
+    box-sizing: border-box;
+    padding-top: 41px;
+    padding-left: 52px;
+    height: 100%;
+    width: 558px;
+    background-color: #000;
+  }
+
+  &__card-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__card-background {
+    display: block;
+    position: absolute;
+    left: -630px;
+    top: -238px;
+    width: 1440px;
+    height: 900px;
+    background-repeat: no-repeat;
+    animation: backgroundRotation 100s infinite linear;
+  }
+
+  &__card-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__choose {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 20px;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 59px;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 5px;
+  }
+
+  &__checkmark {
+    width: 24px;
+    height: 24px;
+    background: url(../images/checkmark.svg) no-repeat center / contain;
+    opacity: .25;
+
+    &_checked {
+      opacity: 1;
+    }
+  }
+
+  &__dashed-line {
+    display: block;
+    width: 53px;
+    height: 1px;
+    border-bottom: 3px dashed #000000;
+  }
+
+  &__card-content {
+    width: 413px;
+    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    height: 52px;
+    background: #000000;
+    border-radius: 5px;
+    color: #fff;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    transition: all .4s ease;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &_active {
+      background-color: #fff;
+      color: #000;
+      border-color: #000;
+    }
+  }
+
+  &__nav-buttons {
+    width: 413px;
+    height: 52px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background: #000;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    transition: all .4s ease;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background: url(../images/white-arrow.svg) no-repeat center / contain;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__next {
+    width: 82%;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    transition: all .4s ease;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__card-item-big {
+    width: 116px;
+    height: 116px;
+    background: #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    transition: all .4s ease;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &_active {
+      border-radius: 20%;
+      border-color: #fff;
+    }
+  }
+
+  &__icon-img {
+    width: 54px;
+    height: 54px;
+    display: block;
   }
 }

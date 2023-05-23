@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export default function ServicesMain() {
+export default function ServicesMain({ onServiceClick }) {
+
+
+
   return (
-    <>
+    <div className="services__wrapper">
       <div className="services__info">
         <h1 className="services__title">Услуги</h1>
         <p className="services__txt">
@@ -12,64 +14,70 @@ export default function ServicesMain() {
       </div>
       <ul className="services__content list">
         <li className="services__item">
-          <Link className="services__link services__link_development link" to='/services/development'>
+          <div className="services__link services__link_development link" to='/services/development'>
             <p className="services__link-txt">
               Разра <br />
               ботка
               сай <br />
               тов
             </p>
-          </Link>
+          </div>
         </li>
         <li className="services__item">
-          <Link className="services__link services__link_promotion link">
+          <div
+            className="services__link services__link_promotion link"
+            onClick={() => onServiceClick('promotion')}
+          >
             <p className="services__link-txt">
               Прод <br />
               ви <br />
               же <br />
               ние
             </p>
-          </Link>
+          </div>
         </li>
         <li className="services__item">
-          <Link className="services__link services__link_design link">
+          <div className="services__link services__link_design link">
             <p className="services__link-txt">
               Ди <br />
               за <br />
               йн
             </p>
-          </Link>
+          </div>
         </li>
         <li className="services__item">
-          <Link className="services__link services__link_production link">
+          <div className="services__link services__link_production link">
             <p className="services__link-txt">
               Про <br />
               дак <br />
               шн
             </p>
-          </Link>
+          </div>
         </li>
         <li className="services__item">
-          <Link className="services__link services__link_bots link">
+          <div
+            className="services__link services__link_bots link"
+            onClick={() => onServiceClick('bots')}
+          >
             <p className="services__link-txt">
               Месс <br />
               енд <br />
               жер <br />
               боты
             </p>
-          </Link>
+          </div>
         </li>
         <li className="services__item">
-          <Link className="services__link services__link_mobile link">
+          <div className="services__link services__link_mobile link">
             <p className="services__link-txt">
               Моби <br />
               льные <br />
               прило <br />
               жения
             </p>
-          </Link>
+          </div>
         </li>
       </ul>
-    </>
+    </div>
   )
 }
