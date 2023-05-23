@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ServicesMain({ onServiceClick }) {
 
-
+  // onServiceClick пробрасывает название карточки наверх, чтобы по нему отобразить необходимую
 
   return (
     <div className="services__wrapper">

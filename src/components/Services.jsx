@@ -9,11 +9,15 @@ import telegramIcon from '../images/telegram-icon.svg';
 
 import promotionBackground from '../images/home-background-about.jpg';
 import botsBackground from '../images/violet-red-background.jpg';
+import CompleteCard from './Services/CompleteCard';
 
 export default function Services() {
 
+  // Стейт для раскрытия выбранной карточки
   const [activeCard, setActiveCard] = useState('');
+  const [isCardComplete, setIsCardComplete] = useState(false);
 
+  // Информация, передаваемая в карточки
   const promotionTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
   const promotionArr = ['SEO', 'контекст', 'таргет', 'SMM', 'Email', 'комплекс'];
   const threeSlides = [0, 1, 2];
@@ -49,6 +53,7 @@ export default function Services() {
           titlesArr={promotionTitles}
           itemsArr={promotionArr}
           onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
         />
         <ServicesCard
           activeCard={activeCard}
@@ -59,6 +64,10 @@ export default function Services() {
           titlesArr={botsTitles}
           itemsArr={botsArr}
           onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
+        />
+        <CompleteCard
+          isCardComplete={isCardComplete}
         />
       </section>
     </Fade>

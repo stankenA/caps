@@ -6,6 +6,7 @@ export default function CheckList({ slides, activatedSlides }) {
       {slides.map((el, i) => {
         if (slides.length - 1 === i) {
           return (
+            // Последняя галочка
             <li className="services__checkbox" key={el}>
               <span
                 className={`services__checkmark ${activatedSlides.includes(i) ? 'services__checkmark_checked' : ''}`}
@@ -15,6 +16,7 @@ export default function CheckList({ slides, activatedSlides }) {
           )
         } else {
           return (
+            // Все галочки в начале
             <React.Fragment key={el}>
               <li className="services__checkbox">
                 <span
