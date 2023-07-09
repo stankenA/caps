@@ -40,7 +40,10 @@ export default function ServicesMain({ onServiceClick }) {
           </div>
         </li>
         <li className="services__item">
-          <div className="services__link services__link_design link">
+          <div
+            className="services__link services__link_design link"
+            onClick={() => onServiceClick('design')}
+          >
             <p className="services__link-txt">
               Ди <br />
               за <br />
@@ -49,7 +52,10 @@ export default function ServicesMain({ onServiceClick }) {
           </div>
         </li>
         <li className="services__item">
-          <div className="services__link services__link_production link">
+          <div
+            className="services__link services__link_production link"
+            onClick={() => onServiceClick('production')}
+          >
             <p className="services__link-txt">
               Про <br />
               дак <br />
@@ -71,7 +77,10 @@ export default function ServicesMain({ onServiceClick }) {
           </div>
         </li>
         <li className="services__item">
-          <div className="services__link services__link_mobile link">
+          <div
+            className="services__link services__link_mobile link"
+            onClick={() => onServiceClick('mobile')}
+          >
             <p className="services__link-txt">
               Моби <br />
               льные <br />

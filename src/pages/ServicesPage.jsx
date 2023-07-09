@@ -9,10 +9,16 @@ import { useForm } from '../hooks/useForm';
 import whatsappIcon from '../images/whatsapp-icon.svg';
 import vkIcon from '../images/vk-icon.svg';
 import telegramIcon from '../images/telegram-icon.svg';
+import appleIcon from '../images/apple.svg';
+import androidIcon from '../images/android.svg';
+import androidAndAppleIcon from '../images/androidandapple.svg';
 
 import promotionBackground from '../images/bg-promotion.jpg';
 import botsBackground from '../images/bg-bots.jpg';
 import developmentBackground from '../images/bg-development.jpg';
+import designBackground from '../images/bg-design.jpg';
+import productionBackground from '../images/bg-production.jpg';
+import mobileBackground from '../images/bg-mobile.jpg';
 
 export default function Services() {
 
@@ -52,6 +58,28 @@ export default function Services() {
 
   const developmentTitles = ['1. выберите тип сайта', '2. Если сайт уже есть - поделитесь', '3. Оставьте свои данные', '4. Оставьте комментарий (опционально)'];
   const developmentArr = ['лендинг', 'магазин', 'инфо-сайт', 'другое'];
+
+  const designTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
+  const designArr = ['афиша/баннер', 'веб-сайт', 'логотип', 'приложение', 'бренд бук', 'айдентика'];
+
+  const productionTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
+  const productionArr = ['монтаж', '2D анимация', 'саунд дизайн', 'джингл', 'озвучка', 'съемка'];
+
+  const mobileTitles = ['1. выберите платформу', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
+  const mobileArr = [
+    {
+      img: appleIcon,
+      name: 'apple'
+    },
+    {
+      img: androidIcon,
+      name: 'android'
+    },
+    {
+      img: androidAndAppleIcon,
+      name: 'apple/android'
+    },
+  ];
 
   function handleService(service) {
     setActiveCard(service);
@@ -94,12 +122,54 @@ export default function Services() {
         />
         <ServicesCard
           activeCard={activeCard}
+          cardBackground={designBackground}
+          cardType={'design'}
+          title={'Дизайн'}
+          slides={threeSlides}
+          titlesArr={designTitles}
+          itemsArr={designArr}
+          onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
+          handleChange={handleChange}
+          values={values}
+          setValues={setValues}
+        />
+        <ServicesCard
+          activeCard={activeCard}
+          cardBackground={productionBackground}
+          cardType={'production'}
+          title={'Продакшн'}
+          slides={threeSlides}
+          titlesArr={productionTitles}
+          itemsArr={productionArr}
+          onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
+          handleChange={handleChange}
+          values={values}
+          setValues={setValues}
+        />
+        <ServicesCard
+          activeCard={activeCard}
           cardBackground={botsBackground}
           cardType={'bots'}
           title={'Мессенджер боты'}
           slides={threeSlides}
           titlesArr={botsTitles}
           itemsArr={botsArr}
+          onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
+          handleChange={handleChange}
+          values={values}
+          setValues={setValues}
+        />
+        <ServicesCard
+          activeCard={activeCard}
+          cardBackground={mobileBackground}
+          cardType={'mobile'}
+          title={'Мобильные приложения'}
+          slides={threeSlides}
+          titlesArr={mobileTitles}
+          itemsArr={mobileArr}
           onLastBack={() => setActiveCard('')}
           onSubmit={() => setIsCardComplete(true)}
           handleChange={handleChange}
