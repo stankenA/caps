@@ -266,12 +266,12 @@
   &__card-background {
     display: block;
     position: absolute;
-    left: -630px;
-    top: -238px;
-    width: 1440px;
-    height: 900px;
+    left: -151%;
+    top: -192%;
+    width: 2334px;
+    height: 2334px;
     background-repeat: no-repeat;
-    animation: backgroundRotation 100s infinite linear;
+    animation: backgroundRotation 80s infinite linear;
   }
 
   &__card-wrapper {

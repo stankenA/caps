@@ -8,7 +8,6 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
-import ProductionPage from './pages/ProductionPage';
 
 import Footer from './components/Footer';
 
@@ -20,10 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/services'>
-            <Route index element={<ServicesPage />} />
-            <Route path='production' element={<ProductionPage />} />
-          </Route>
+          <Route path='/services' element={<ServicesPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </main>
