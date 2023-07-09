@@ -14,7 +14,10 @@ export default function ServicesMain({ onServiceClick }) {
       </div>
       <ul className="services__content list">
         <li className="services__item">
-          <div className="services__link services__link_development link" to='/services/development'>
+          <div
+            className="services__link services__link_development link"
+            onClick={() => onServiceClick('development')}
+          >
             <p className="services__link-txt">
               Разра <br />
               ботка

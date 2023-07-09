@@ -10,8 +10,9 @@ import whatsappIcon from '../images/whatsapp-icon.svg';
 import vkIcon from '../images/vk-icon.svg';
 import telegramIcon from '../images/telegram-icon.svg';
 
-import promotionBackground from '../images/home-background-about.jpg';
-import botsBackground from '../images/violet-red-background.jpg';
+import promotionBackground from '../images/bg-promotion.jpg';
+import botsBackground from '../images/bg-bots.jpg';
+import developmentBackground from '../images/bg-development.jpg';
 
 export default function Services() {
 
@@ -26,10 +27,12 @@ export default function Services() {
   const [activeCard, setActiveCard] = useState('');
   const [isCardComplete, setIsCardComplete] = useState(false);
 
+  const threeSlides = [0, 1, 2];
+  const fourSlides = [0, 1, 2, 3];
+
   // Информация, передаваемая в карточки
   const promotionTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
   const promotionArr = ['SEO', 'контекст', 'таргет', 'SMM', 'Email', 'комплекс'];
-  const threeSlides = [0, 1, 2];
 
   const botsTitles = ['1. выберите платформу', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
   const botsArr = [
@@ -47,6 +50,9 @@ export default function Services() {
     },
   ];
 
+  const developmentTitles = ['1. выберите тип сайта', '2. Если сайт уже есть - поделитесь', '3. Оставьте свои данные', '4. Оставьте комментарий (опционально)'];
+  const developmentArr = ['лендинг', 'магазин', 'инфо-сайт', 'другое'];
+
   function handleService(service) {
     setActiveCard(service);
     setValues({ ...values, type: service });
@@ -57,6 +63,20 @@ export default function Services() {
       <section className="services">
         <ServicesMain
           onServiceClick={handleService}
+        />
+        <ServicesCard
+          activeCard={activeCard}
+          cardBackground={developmentBackground}
+          cardType={'development'}
+          title={'Разработка сайтов'}
+          slides={fourSlides}
+          titlesArr={developmentTitles}
+          itemsArr={developmentArr}
+          onLastBack={() => setActiveCard('')}
+          onSubmit={() => setIsCardComplete(true)}
+          handleChange={handleChange}
+          values={values}
+          setValues={setValues}
         />
         <ServicesCard
           activeCard={activeCard}

@@ -3,6 +3,7 @@ import CheckList from './CheckList';
 import CardContent from './CardContent';
 import PersonalData from './PersonalData';
 import UserCommentary from './UserCommentary';
+import DevelopmentContent from './DevelopmentContent';
 
 export default function ServicesCard({
   activeCard,
@@ -85,7 +86,7 @@ export default function ServicesCard({
                 // Если активен последний слайд, показываем форму для комментария
                 : activeSlide === slides.length - 1 ? (<UserCommentary onChange={handleChange} values={values} />)
                   // Нужен для второго слайда, если в сумме их 4
-                  : (<CardContent contentArr={itemsArr} values={values} />)
+                  : (<DevelopmentContent contentArr={itemsArr} values={values} onChange={handleChange} />)
           }
           {/* Кнопки навигации по слайдам */}
           <div className="services__nav-buttons">

@@ -38,7 +38,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/home-background-services.jpg) no-repeat center;
+        background: url(../images/bg-development.jpg) no-repeat center;
       }
 
       &:hover {
@@ -61,7 +61,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/home-background-cases.jpg) no-repeat center;
+        background: url(../images/bg-promotion.jpg) no-repeat center;
       }
 
       &:hover {
@@ -88,7 +88,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/home-background-about.jpg) no-repeat center;
+        background: url(../images/bg-bots.jpg) no-repeat center;
       }
 
       &:hover {

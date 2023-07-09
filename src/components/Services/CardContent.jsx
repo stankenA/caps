@@ -24,7 +24,7 @@ export default function CardContent({ contentArr, values, setValues }) {
     <fieldset className="services__fieldset fieldset">
       <ul className="services__card-content list">
         {/* Отрисовываем соответствующие плитки в зависимости от количества элементов контента */}
-        {contentArr.length === 6
+        {contentArr.length > 3
           ? contentArr.map((el) => (
             <li
               key={el}
