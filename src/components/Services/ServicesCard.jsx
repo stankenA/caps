@@ -8,11 +8,15 @@ export default function ServicesCard({
   activeCard,
   cardType,
   cardBackground,
-  title, slides,
+  title,
+  slides,
   titlesArr,
   itemsArr,
   onLastBack,
-  onSubmit
+  onSubmit,
+  handleChange,
+  values,
+  setValues
 }) {
 
   // Показывает текущий активный слайд контента в карточке
@@ -32,10 +36,18 @@ export default function ServicesCard({
     if (activeSlide === slides[0]) {
       onLastBack();
       setActivatedSlides([]);
+      setValues({ context: [], type: '' })
     } else {
       activatedSlides.pop();
       setActiveSlide(activeSlide - 1);
     }
+  }
+
+  function submitForm(evt) {
+    evt.preventDefault();
+    onSubmit();
+    setValues({ context: [], type: '' })
+    console.log('boop');
   }
 
   return (
@@ -67,13 +79,13 @@ export default function ServicesCard({
           {/* Компонент с галочками */}
           <CheckList slides={slides} activatedSlides={activatedSlides} />
           { //Если активен первый слайд, показываем переданный контент
-            activeSlide === 0 ? (<CardContent contentArr={itemsArr} />)
+            activeSlide === 0 ? (<CardContent contentArr={itemsArr} values={values} setValues={setValues} />)
               // Если активен предпоследний слайд, показываем форму для личных данных
-              : activeSlide === slides.length - 2 ? (<PersonalData />)
+              : activeSlide === slides.length - 2 ? (<PersonalData onChange={handleChange} values={values} />)
                 // Если активен последний слайд, показываем форму для комментария
-                : activeSlide === slides.length - 1 ? (<UserCommentary />)
+                : activeSlide === slides.length - 1 ? (<UserCommentary onChange={handleChange} values={values} />)
                   // Нужен для второго слайда, если в сумме их 4
-                  : (<CardContent contentArr={itemsArr} />)
+                  : (<CardContent contentArr={itemsArr} values={values} />)
           }
           {/* Кнопки навигации по слайдам */}
           <div className="services__nav-buttons">
@@ -87,14 +99,17 @@ export default function ServicesCard({
               ? <button
                 type="submit"
                 className="services__next button button_black"
-                onClick={() => onSubmit()}
+                onClick={submitForm}
               >
                 отправить
               </button>
               : <button
                 type="button"
                 className="services__next button button_black"
-                onClick={() => showNextSlide()}
+                onClick={(evt) => {
+                  evt.preventDefault();
+                  showNextSlide()
+                }}
               >
                 далее
               </button>
