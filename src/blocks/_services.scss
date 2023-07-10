@@ -7,6 +7,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 1439px) {
+    min-height: unset;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -20,6 +24,12 @@
     width: 400px;
     margin-top: 48px;
     margin-left: 52px;
+
+    @media screen and (max-width: 1439px) {
+      margin-left: 0;
+      margin-top: 13px;
+      width: 291px;
+    }
   }
 
   &__title {
@@ -28,9 +38,17 @@
     line-height: 60px;
     margin: 0 0 46px;
 
+    @media screen and (max-width: 1439px) {
+      font-size: 40px;
+    }
+
     &_white {
       color: #fff;
       margin-bottom: 111px;
+
+      @media screen and (max-width: 1439px) {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -51,6 +69,11 @@
     grid-template-columns: repeat(3, 211px);
     grid-template-rows: repeat(2, 211px);
     gap: 17px;
+
+    @media screen and (max-width: 1439px) {
+      grid-template-columns: repeat(3, 194px);
+      grid-template-rows: repeat(2, 194px);
+    }
   }
 
   &__item {
@@ -72,6 +95,10 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    @media screen and (max-width: 1439px) {
+      padding: 24px;
+    }
 
     &_development {
       .services__link-txt {
@@ -224,6 +251,10 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 34px;
+    }
   }
 
   &__card {
@@ -250,6 +281,12 @@
     height: 100%;
     width: 558px;
     background-color: #000;
+
+    @media screen and (max-width: 1439px) {
+      width: 410px;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
   }
 
   &__card-right {
@@ -272,6 +309,11 @@
     height: 1400px;
     background-repeat: no-repeat;
     animation: backgroundRotation 80s infinite linear;
+
+    @media screen and (max-width: 1439px) {
+      left: -105%;
+      top: -109%;
+    }
   }
 
   &__card-wrapper {
@@ -292,6 +334,10 @@
     margin: 0 0 20px;
     display: none;
 
+    @media screen and (max-width: 1439px) {
+      font-size: 20px;
+    }
+
     &_active {
       display: block;
     }
@@ -303,6 +349,10 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 59px;
+
+    @media screen and (max-width: 1439px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__checkbox {
@@ -493,6 +543,8 @@
 
   &__complete-left {
     width: 413px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__complete-discount {
@@ -509,7 +561,7 @@
     background: #FFFFFF;
     border-radius: 5px;
     color: #000;
-    margin-top: 70px;
+    margin-top: auto;
     box-sizing: border-box;
     border: 1px solid #fff;
     transition: all .4s ease;

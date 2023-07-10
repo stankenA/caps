@@ -66,7 +66,8 @@
 
   &__menu-list {
     display: flex;
-    gap: 137px;
+    flex-grow: 1;
+    justify-content: space-evenly;
   }
 
   &__menu-link {
@@ -88,6 +89,10 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+
+    @media screen and (max-width: 1439px) {
+      width: 226px;
+    }
 
     &::after {
       content: '';

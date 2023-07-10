@@ -1,23 +1,45 @@
 :root {
   --content-width: 1280px;
 
+  @media screen and (max-width: 1439px) {
+    --content-width: 980px;
+  }
+
   // Цвета для градиентной заливки текста на главной странице
-  --color-services-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(95.18% 125% at 4.82% 23.75%, #FD9CFF 7.61%, #AC8FFF 35.14%, #95F2FF 63.45%, #9EFFB4 100%);
+  --color-services-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(95.18% 125% at 4.82% 23.75%, #FD9CFF 7.61%, #AC8FFF 35.14%, #95F2FF 63.45%, #9EFFB4 100%);
 
-  --color-cases-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #C2FFF8 7.61%, #9FFFE8 35.14%, #FF7D7D 63.45%, #A7FAFF 100%);
+  --color-cases-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #C2FFF8 7.61%, #9FFFE8 35.14%, #FF7D7D 63.45%, #A7FAFF 100%);
 
-  --color-about-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(76.14% 323.01% at 10.11% 28.24%, #FFA8CC 7.61%, #93E5FF 41.67%, #FFF599 66.67%, #FFA3A3 100%);
+  --color-about-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(76.14% 323.01% at 10.11% 28.24%, #FFA8CC 7.61%, #93E5FF 41.67%, #FFF599 66.67%, #FFA3A3 100%);
 
   // Цвета для градиентной заливки текста на странице услуг
-  --color-development: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FD8DFF 7.61%, #9195FF 35.14%, #8FF2FF 63.45%, #94FFAB 100%);
+  --color-development: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FD8DFF 7.61%, #9195FF 35.14%, #8FF2FF 63.45%, #94FFAB 100%);
 
-  --color-promotion: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #C2FFF8 7.61%, #9FFFE8 35.14%, #FF7D7D 63.45%, #A7FAFF 100%);
+  --color-promotion: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #C2FFF8 7.61%, #9FFFE8 35.14%, #FF7D7D 63.45%, #A7FAFF 100%);
 
-  --color-design: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FF9DB5 7.61%, #A199FF 35.14%, #99C8FF 63.45%, #FF81CC 100%);
+  --color-design: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FF9DB5 7.61%, #A199FF 35.14%, #99C8FF 63.45%, #FF81CC 100%);
 
-  --color-production: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(77.6% 81.5% at -3.44% 4.61%, #FFB1EE 7.61%, #AC42FF 35.14%, #9AA51F 63.45%, #83D917 100%);
+  --color-production: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(77.6% 81.5% at -3.44% 4.61%, #FFB1EE 7.61%, #AC42FF 35.14%, #9AA51F 63.45%, #83D917 100%);
 
-  --color-bots: conic-gradient(from 180deg at 50% 50%, #2C2C2C 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #494949 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #292929 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #2C2C2C 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #A7BAFF 7.61%, #96A0FF 35.14%, #D884FF 63.45%, #FFD18B 100%);
+  --color-bots: conic-gradient(from 180deg at 50% 50%, #2C2C2C 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #494949 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #292929 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #2C2C2C 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #A7BAFF 7.61%, #96A0FF 35.14%, #D884FF 63.45%, #FFD18B 100%);
 
-  --color-mobile: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg), radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FFFFFF 7.61%, #FFFFFF 35.14%, #CEFF42 63.45%, #FFFFFF 100%);
+  --color-mobile: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
+  conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),
+  radial-gradient(79.79% 80.25% at 10.11% 28.24%, #FFFFFF 7.61%, #FFFFFF 35.14%, #CEFF42 63.45%, #FFFFFF 100%);
 }

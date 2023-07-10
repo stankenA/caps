@@ -2,4 +2,9 @@
   width: var(--content-width);
   margin: 174px auto 121px;
   min-height: 40vh;
+
+  @media screen and (max-width: 1439px) {
+    margin-top: 150px;
+    margin-bottom: 120px;
+  }
 }
