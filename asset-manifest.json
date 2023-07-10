@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.af255365.css",
-    "main.js": "/caps/static/js/main.0cebcc45.js",
+    "main.css": "/caps/static/css/main.09006527.css",
+    "main.js": "/caps/static/js/main.466751f3.js",
     "static/media/caps-logo-white.svg": "/caps/static/media/caps-logo-white.2e6a2216770edafe67f201be783fa651.svg",
     "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
     "static/media/caps-logo.svg": "/caps/static/media/caps-logo.b1a53beb6dc8f85f59d98efebc772155.svg",
@@ -11,6 +11,8 @@
     "static/media/bg-production.jpg": "/caps/static/media/bg-production.f5b2af7ff14df9c9fe49.jpg",
     "static/media/bg-promotion.jpg": "/caps/static/media/bg-promotion.84931e2dca6454428f8f.jpg",
     "static/media/bg-mobile.jpg": "/caps/static/media/bg-mobile.26fd1859b68b2492a3f4.jpg",
+    "static/media/about-img.jpg": "/caps/static/media/about-img.11a8bb5477e891e007e2.jpg",
+    "static/media/about-me.jpg": "/caps/static/media/about-me.83527b4bea2f8e3af64d.jpg",
     "static/media/androidandapple.svg": "/caps/static/media/androidandapple.bc9fc3770331b344d82e78fcc90e43e7.svg",
     "static/media/apple.svg": "/caps/static/media/apple.b7aaeb4278c54106df9634a734e493ba.svg",
     "static/media/whatsapp-icon-black.svg": "/caps/static/media/whatsapp-icon-black.9a552db1c21d2c73452f.svg",
@@ -23,11 +25,11 @@
     "index.html": "/caps/index.html",
     "static/media/white-arrow.svg": "/caps/static/media/white-arrow.969fe18bda059ed039f1.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
-    "main.af255365.css.map": "/caps/static/css/main.af255365.css.map",
-    "main.0cebcc45.js.map": "/caps/static/js/main.0cebcc45.js.map"
+    "main.09006527.css.map": "/caps/static/css/main.09006527.css.map",
+    "main.466751f3.js.map": "/caps/static/js/main.466751f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.af255365.css",
-    "static/js/main.0cebcc45.js"
+    "static/css/main.09006527.css",
+    "static/js/main.466751f3.js"
   ]
 }
