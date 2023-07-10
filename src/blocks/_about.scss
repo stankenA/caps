@@ -1,0 +1,177 @@
+.about {
+  &__card {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid #000;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__left {
+    width: 264px;
+    margin-top: 35px;
+    margin-left: 52px;
+    margin-right: 46px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 25px;
+  }
+
+  &__txt {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 180%;
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-grow: 1;
+    background-color: #000;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    margin-right: 72px;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    @include tranisition(1.2s);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+
+    &_active {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__img {
+    width: 372px;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  &__item-content {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  &__item-title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__item-subtitle {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__item-txt {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 136.336%;
+    margin: 0;
+    opacity: .7;
+  }
+
+  &__voice {
+    width: 100%;
+    height: 59px;
+    border-radius: 66px;
+    background: #06C;
+    margin-top: 20px;
+  }
+
+  &__button {
+    height: 100%;
+    width: 151px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    &:hover {
+      .about__arrow {
+        right: 10px;
+      }
+    }
+  }
+
+  &__button-bg {
+    @include props-for-background-rotation;
+    background: url(../images/bg-development.jpg) no-repeat center / cover;
+    opacity: 1;
+    visibility: visible;
+    top: -96%;
+    left: -416%;
+  }
+
+  &__arrow {
+    width: 14px;
+    height: 14px;
+    display: block;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-radius: 2px;
+    transform: rotate(-45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 21px;
+    z-index: 3;
+    @include tranisition;
+  }
+
+  &__nav {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 152px;
+    justify-content: flex-end;
+  }
+
+  &__nav-btn {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &_active {
+      background: var(--color-bots);
+      font-weight: 700;
+      @include text-fill-color;
+    }
+  }
+}

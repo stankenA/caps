@@ -18,3 +18,7 @@
   text-fill-color: transparent;
   background-blend-mode: screen, difference, normal;
 }
+
+@mixin tranisition($time: .4s) {
+  transition: all $time ease;
+}
