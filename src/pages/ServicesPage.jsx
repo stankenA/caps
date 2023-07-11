@@ -81,7 +81,7 @@ export default function Services() {
     },
   ];
 
-  function handleService(service) {
+  function handleServiceClick(service) {
     setActiveCard(service);
     setValues({ ...values, type: service });
   }
@@ -90,7 +90,7 @@ export default function Services() {
     <Fade direction='left'>
       <section className="services">
         <ServicesMain
-          onServiceClick={handleService}
+          onServiceClick={handleServiceClick}
         />
         <ServicesCard
           activeCard={activeCard}

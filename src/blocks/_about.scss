@@ -50,7 +50,7 @@
     right: 0;
     bottom: 0;
     display: flex;
-    @include tranisition(1.2s);
+    @include transition(1.2s);
     transform: translateX(-100%);
     opacity: 0;
     visibility: hidden;
@@ -147,7 +147,7 @@
     top: 50%;
     right: 21px;
     z-index: 3;
-    @include tranisition;
+    @include transition;
   }
 
   &__nav {

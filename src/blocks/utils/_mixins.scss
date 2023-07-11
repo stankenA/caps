@@ -19,6 +19,6 @@
   background-blend-mode: screen, difference, normal;
 }
 
-@mixin tranisition($time: .4s) {
+@mixin transition($time: .4s) {
   transition: all $time ease;
 }
