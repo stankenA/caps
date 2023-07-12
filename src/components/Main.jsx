@@ -51,7 +51,7 @@ export default function Main() {
             </div>
           </Fade>
         </div>
-        <Link className="home__link link" to='/contacts'>
+        <Link className="home__link home__link_contacts link" to='/contacts'>
           <p className="home__link-txt">
             Контакты
           </p>
@@ -59,8 +59,7 @@ export default function Main() {
         <form className="home__form">
           <div className="home__form-left">
             <h2 className="home__form-title">
-              Консуль- <br />
-              тация
+              Консуль&shy;<wbr />тация
             </h2>
             <p className="home__form-txt">
               {`Мы позвоним вам и проконсультируем по любому вопросу, просто оставьте свой номер и подскажите, как вас зовут :)`}
@@ -69,7 +68,9 @@ export default function Main() {
           <fieldset className="home__form-right">
             <input type="text" className="home__form-input" placeholder="Имя Фамилия" />
             <input type="tel" className="home__form-input" placeholder="+7 (999) 999-99-99" />
-            <OrderButton type={'submit'} />
+            <button type="button" className="home__button button">
+              <p className="header__button-txt">Заказать</p>
+            </button>
             <p className="home__form-politics">
               *Оставляя свои данные, вы соглашаетесь с политикой персональных данных
             </p>

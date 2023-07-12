@@ -5,6 +5,10 @@
     --content-width: 980px;
   }
 
+  @media screen and (max-width: 1023px) {
+    --content-width: 94%;
+  }
+
   // Цвета для градиентной заливки текста на главной странице
   --color-services-home: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg),
   conic-gradient(from 180deg at 50% 50%, #000000 0deg, #FFFFFF 30deg, #000000 95.62deg, #FFFFFF 168.75deg, #000000 228.75deg, #FFFFFF 285deg, #000000 360deg),

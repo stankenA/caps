@@ -6,6 +6,10 @@
     width: 100%;
     height: 70px;
     border-bottom: 4px solid #000000;
+
+    @media screen and (max-width: 767px) {
+      height: 58px;
+    }
   }
 
   &__live {
@@ -14,6 +18,11 @@
     background-color: #000;
     box-sizing: border-box;
     padding: 18px 34px 18px 25px;
+
+    @media screen and (max-width: 767px) {
+      padding: 6px 0 0 0;
+      min-width: 110px;
+    }
   }
 
   &__txt {
@@ -23,6 +32,11 @@
     line-height: 17px;
     text-align: right;
     color: #fff;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      max-width: 95px;
+    }
   }
 
   &__marquee {
@@ -36,12 +50,20 @@
     display: flex;
     gap: 86px;
     margin-right: 86px;
+
+    @media screen and (max-width: 767px) {
+      gap: 18px;
+    }
   }
 
   &__marquee-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
   }
 
   &__marquee-line {

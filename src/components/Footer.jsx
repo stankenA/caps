@@ -12,7 +12,7 @@ export default function Footer() {
         <Link className="footer__logo-link" to='/'>
           <img src={logoIcon} alt="CAPS logo" className="footer__logo" />
         </Link>
-        <ul className="footer__container list">
+        <ul className="footer__container footer__container_nav-1 list">
           <li className="footer__item">
             <Link className="footer__link link" to='/services'>
               Услуги
@@ -29,7 +29,7 @@ export default function Footer() {
             </button>
           </li>
         </ul>
-        <ul className="footer__container list">
+        <ul className="footer__container footer__container_nav-2 list">
           <li className="footer__item footer__item_icons">
             <Link className="footer__icon-link link">
               <span className="footer__icon footer__icon_whatsapp"></span>
@@ -52,7 +52,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul className="footer__container list">
+        <ul className="footer__container footer__container_info list">
           <li className="footer__item">
             <Link className="footer__link footer__link_contacts link" to='mailto:caps@suka.nahuy'>
               caps@dam.tati

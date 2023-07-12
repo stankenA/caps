@@ -130,6 +130,7 @@
     width: 35px;
     height: 35px;
     position: relative;
+    @include transition(1.2s);
 
     &_disabled {
       opacity: .7;
@@ -151,6 +152,15 @@
     height: 40px;
     position: relative;
     z-index: 5;
+    @include transition(1.2s);
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+    &_hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   &__button {
@@ -196,7 +206,7 @@
     margin-top: 25px;
     display: flex;
     align-items: center;
-    gap: 152px;
+    gap: 72px;
     justify-content: flex-end;
   }
 
@@ -205,6 +215,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+    min-width: 175px;
 
     &:hover {
       opacity: .8;

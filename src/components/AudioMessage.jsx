@@ -9,7 +9,7 @@ export default function AudioMessage({ audio }) {
   const audioContainerRef = useRef();
   const waveSurferRef = useRef();
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isBtnDisabled, setIsBtnDisabled] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Свойства для аудисообщения
   const waveProps = {
@@ -30,7 +30,7 @@ export default function AudioMessage({ audio }) {
     wavesurfer.load(audio);
     wavesurfer.on('ready', () => {
       waveSurferRef.current = wavesurfer;
-      setIsBtnDisabled(false);
+      setIsLoading(false);
     });
 
     return () => wavesurfer.destroy();
@@ -45,13 +45,13 @@ export default function AudioMessage({ audio }) {
     <div className="about__voice">
       <span className="about__voice-corner"></span>
       <button
-        className={`about__voice-btn button ${isBtnDisabled ? 'about__voice-btn_disabled' : ''}`}
+        className={`about__voice-btn button ${isLoading ? 'about__voice-btn_disabled' : ''}`}
         onClick={handlePlayBtn}
-        disabled={isBtnDisabled}
+        disabled={isLoading}
       >
         <img src={isPlaying ? pauseIcon : playIcon} alt="Кнопка проигрывателя" className="about__voice-btn-img" />
       </button>
-      <div ref={audioContainerRef} className="about__voice-track"></div>
+      <div ref={audioContainerRef} className={`about__voice-track ${isLoading ? 'about__voice-track_hidden' : ''}`}></div>
     </div>
   )
 }
