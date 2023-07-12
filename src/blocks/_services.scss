@@ -18,6 +18,10 @@
     height: 100%;
     box-sizing: border-box;
     padding: 20px;
+
+    @media screen and (max-width: 1023px) {
+      padding: 15px;
+    }
   }
 
   &__info {
@@ -30,6 +34,10 @@
       margin-top: 13px;
       width: 291px;
     }
+
+    @media screen and (max-width: 1023px) {
+      width: 192px;
+    }
   }
 
   &__title {
@@ -40,6 +48,12 @@
 
     @media screen and (max-width: 1439px) {
       font-size: 40px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
     }
 
     &_white {
@@ -58,6 +72,11 @@
     line-height: 180%;
     margin: 0;
 
+    @media screen and (max-width: 1023px) {
+      font-size: 11px;
+      line-height: 175%;
+    }
+
     &_white {
       color: #fff;
       max-width: 264px;
@@ -73,6 +92,11 @@
     @media screen and (max-width: 1439px) {
       grid-template-columns: repeat(3, 194px);
       grid-template-rows: repeat(2, 194px);
+    }
+
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: repeat(2, 150px);
     }
   }
 
@@ -98,6 +122,10 @@
 
     @media screen and (max-width: 1439px) {
       padding: 24px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      padding: 20px;
     }
 
     &_development {
@@ -255,6 +283,10 @@
     @media screen and (max-width: 1439px) {
       font-size: 34px;
     }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 26px;
+    }
   }
 
   &__card {
@@ -287,6 +319,13 @@
       padding-top: 30px;
       padding-left: 30px;
     }
+
+    @media screen and (max-width: 1023px) {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 10px;
+      width: 38%;
+    }
   }
 
   &__card-right {
@@ -298,6 +337,11 @@
     background-color: #fff;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 1023px) {
+      flex-grow: unset;
+      width: 62%;
+    }
   }
 
   &__card-background {
@@ -338,6 +382,12 @@
       font-size: 20px;
     }
 
+    @media screen and (max-width: 1023px) {
+      font-size: 18px;
+      text-align: center;
+      line-height: 20px;
+    }
+
     &_active {
       display: block;
     }
@@ -364,6 +414,11 @@
     box-sizing: border-box;
     border: 3px solid #000000;
     border-radius: 5px;
+
+    @media screen and (max-width: 1023px) {
+      width: 44px;
+      height: 44px;
+    }
   }
 
   &__checkmark {
@@ -382,10 +437,18 @@
     width: 53px;
     height: 1px;
     border-bottom: 3px dashed #000000;
+
+    @media screen and (max-width: 1023px) {
+      width: 27px;
+    }
   }
 
   &__fieldset {
     width: 413px;
+
+    @media screen and (max-width: 1023px) {
+      width: 95%;
+    }
   }
 
   &__card-content {
@@ -394,6 +457,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      justify-content: center;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
   }
 
   &__card-item {
@@ -408,6 +478,11 @@
     box-sizing: border-box;
     border: 2px solid #000;
     transition: all .4s ease;
+
+    @media screen and (max-width: 1023px) {
+      width: 190px;
+      height: 40px;
+    }
 
     &:hover {
       border-color: #fff;
@@ -426,6 +501,11 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      width: 95%;
+      height: 40px;
+    }
   }
 
   &__back {
@@ -479,6 +559,11 @@
     border: 2px solid #000;
     transition: all .4s ease;
 
+    @media screen and (max-width: 1023px) {
+      width: 80px;
+      height: 80px;
+    }
+
     &:hover {
       border-color: #fff;
     }
@@ -493,10 +578,19 @@
     width: 54px;
     height: 54px;
     display: block;
+
+    @media screen and (max-width: 1023px) {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   &__input {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 10px;
+    }
 
     &:last-of-type {
       margin-bottom: 0;
@@ -512,6 +606,11 @@
     min-height: 194px;
     padding-right: 26px;
     resize: none;
+
+    @media screen and (max-width: 1023px) {
+      min-height: 125px;
+      padding: 10px 10px 0 10px;
+    }
 
     &::-webkit-scrollbar {
       display: none;
@@ -536,6 +635,10 @@
     transform: translate(100%);
     transition: all 1s ease;
 
+    @media screen and (max-width: 1023px) {
+      padding: 30px 20px;
+    }
+
     &_active {
       transform: translate(0);
     }
@@ -545,6 +648,10 @@
     width: 413px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1023px) {
+      width: 342px;
+    }
   }
 
   &__complete-discount {
@@ -565,6 +672,10 @@
     box-sizing: border-box;
     border: 1px solid #fff;
     transition: all .4s ease;
+
+    @media screen and (max-width: 1023px) {
+      height: 45px;
+    }
 
     &:hover {
       color: #fff;

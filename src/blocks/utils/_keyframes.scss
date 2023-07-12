@@ -17,3 +17,31 @@
     transform: translateX(0);
   }
 }
+
+@keyframes appear-up {
+  0% {
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes appear-left {
+  0% {
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}

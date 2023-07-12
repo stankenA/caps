@@ -98,6 +98,10 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+    }
   }
 
   &__button {
@@ -114,6 +118,11 @@
 
     @media screen and (max-width: 1439px) {
       width: 226px;
+      height: 45px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 185px;
     }
 
     &::after {
