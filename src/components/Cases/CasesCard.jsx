@@ -35,6 +35,15 @@ export default function CasesCard() {
       link: '#',
       modifier: 'some2',
     },
+    {
+      title: 'Something here',
+      brief: 'Чё?',
+      type: 'Многостраничный сайт описание продукта',
+      img: plane,
+      qr: eagleQR,
+      link: '#',
+      modifier: 'some3',
+    },
   ];
 
   function handleNextBtn() {
@@ -57,11 +66,12 @@ export default function CasesCard() {
       </div>
       <ul className="cases__list list">
         {casesArr.map((item, i) => (
-          <li className={`cases__item
-            cases__item_${item.modifier}
-            ${i === activeCard ? 'cases__item_active' : ''}
-            ${i < activeCard ? 'cases__item_shown' : ''}`}
-            style={{ zIndex: 100 / (i + 1) }}
+          <li className={`
+              cases__item
+              cases__item_${item.modifier}
+              ${i === activeCard ? 'cases__item_active' : ''}
+              ${i < activeCard ? 'cases__item_shown' : ''}`}
+            style={{ zIndex: Math.floor(100 / (i + 1)) }}
             key={item.title}
           >
             <img src={plane} alt="Самолёт" className={`cases__img cases__img_${item.modifier}`} />

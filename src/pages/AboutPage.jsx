@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 
 import poridgeImg from '../images/about-img.jpg';
-import meImg from '../images/about-me.jpg'
+import meImg from '../images/about-me.jpg';
+
+import AudioMessage from '../components/AudioMessage';
+import audioManagement from '../voices/Jain_-_Makeba_51573353.mp3';
 
 export default function AboutPage() {
 
   const [activeSlide, setActiveSlide] = useState(0);
-
   function handleNextBtn() {
     if (aboutArr.length - 1 === activeSlide) {
       setActiveSlide(0)
@@ -22,24 +24,28 @@ export default function AboutPage() {
       title: 'Сандерс',
       subtitle: 'Директор по отстатию',
       txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
+      audio: audioManagement,
     },
     {
       img: poridgeImg,
       title: 'Никита',
       subtitle: 'Директор по развитию, CEO',
       txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
+      audio: audioManagement,
     },
     {
       img: poridgeImg,
       title: 'Ноунейм',
       subtitle: 'Местный поридж',
       txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
+      audio: audioManagement,
     },
     {
       img: meImg,
       title: 'Артём',
       subtitle: 'Местный кринж',
       txt: '“👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎”',
+      audio: audioManagement,
     },
   ];
 
@@ -71,9 +77,7 @@ export default function AboutPage() {
                   <p className="about__item-txt">
                     {item.txt}
                   </p>
-                  <div className="about__voice">
-
-                  </div>
+                  <AudioMessage audio={item.audio} />
                 </div>
               </li>
             ))}

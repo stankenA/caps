@@ -61,8 +61,6 @@
     &_shown {
       right: 72px;
       transform: translateX(-120%);
-      // opacity: 0;
-      // visibility: hidden;
     }
 
     &_some {
@@ -71,6 +69,10 @@
 
     &_some2 {
       background: url(../images/bg-some-case2.jpg) no-repeat;
+    }
+
+    &_some3 {
+      background: aqua;
     }
 
     &_eagle {
