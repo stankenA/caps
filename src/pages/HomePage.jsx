@@ -29,7 +29,7 @@ export default function Main() {
         </p>
       </Link>
       <div className="home__info">
-        <Fade direction='up' cascade={true} triggerOnce>
+        <Fade direction='up' triggerOnce>
           <Link className="home__info-link link" to='mailto:caps@suka.nahuy'>
             caps@dam.tati
           </Link>
