@@ -78,6 +78,10 @@
     align-items: center;
     width: var(--content-width);
     margin: 30px auto;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__logo {
