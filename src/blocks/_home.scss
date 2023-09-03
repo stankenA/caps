@@ -71,7 +71,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-development.jpg) no-repeat center;
+        background: url(../assets/images/bg-development.jpg) no-repeat center;
       }
 
       &:hover {
@@ -99,7 +99,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-promotion.jpg) no-repeat center;
+        background: url(../assets/images/bg-promotion.jpg) no-repeat center;
       }
 
       &:hover {
@@ -131,7 +131,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-bots.jpg) no-repeat center;
+        background: url(../assets/images/bg-bots.jpg) no-repeat center;
       }
 
       &:hover {
@@ -378,7 +378,7 @@
       position: absolute;
       width: 1440px;
       height: 900px;
-      background: url(../images/bg-development.jpg) no-repeat center / cover;
+      background: url(../assets/images/bg-development.jpg) no-repeat center / cover;
       animation: backgroundRotation 20s infinite linear;
     }
   }

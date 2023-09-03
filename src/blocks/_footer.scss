@@ -131,26 +131,26 @@
     background-size: 20px 20px;
 
     &_whatsapp {
-      background-image: url(../images/whatsapp-icon-black.svg);
+      background-image: url(../assets/images/whatsapp-icon-black.svg);
 
       &:hover {
-        background-image: url(../images/whatsapp-icon.svg);
+        background-image: url(../assets/images/whatsapp-icon.svg);
       }
     }
 
     &_telegram {
-      background-image: url(../images/telegram-icon-black.svg);
+      background-image: url(../assets/images/telegram-icon-black.svg);
 
       &:hover {
-        background-image: url(../images/telegram-icon.svg);
+        background-image: url(../assets/images/telegram-icon.svg);
       }
     }
 
     &_vk {
-      background-image: url(../images/vk-icon-black.svg);
+      background-image: url(../assets/images/vk-icon-black.svg);
 
       &:hover {
-        background-image: url(../images/vk-icon.svg);
+        background-image: url(../assets/images/vk-icon.svg);
       }
     }
   }

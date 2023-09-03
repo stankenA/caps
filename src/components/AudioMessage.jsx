@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import WaveSurfer from 'wavesurfer.js';
 
-import playIcon from '../images/play-icon.svg';
-import pauseIcon from '../images/pause-icon.svg';
+import playIcon from '../assets/images/play-icon.svg';
+import pauseIcon from '../assets/images/pause-icon.svg';
 
 export default function AudioMessage({ audio }) {
 

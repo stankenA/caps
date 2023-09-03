@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 
-import poridgeImg from '../images/about-img.jpg';
-import meImg from '../images/about-me.jpg';
+import poridgeImg from '../assets/images/about-img.jpg';
 
 import AudioMessage from '../components/AudioMessage';
-import audioManagement from '../voices/Jain_-_Makeba_51573353.mp3';
+import audioManagement from '../assets/voices/Jain_-_Makeba_51573353.mp3';
 
 export default function AboutPage() {
 

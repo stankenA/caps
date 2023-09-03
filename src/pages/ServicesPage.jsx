@@ -6,19 +6,19 @@ import CompleteCard from '../components/Services/CompleteCard';
 
 import { useForm } from '../hooks/useForm';
 
-import whatsappIcon from '../images/whatsapp-icon.svg';
-import vkIcon from '../images/vk-icon.svg';
-import telegramIcon from '../images/telegram-icon.svg';
-import appleIcon from '../images/apple.svg';
-import androidIcon from '../images/android.svg';
-import androidAndAppleIcon from '../images/androidandapple.svg';
+import whatsappIcon from '../assets/images/whatsapp-icon.svg';
+import vkIcon from '../assets/images/vk-icon.svg';
+import telegramIcon from '../assets/images/telegram-icon.svg';
+import appleIcon from '../assets/images/apple.svg';
+import androidIcon from '../assets/images/android.svg';
+import androidAndAppleIcon from '../assets/images/androidandapple.svg';
 
-import promotionBackground from '../images/bg-promotion.jpg';
-import botsBackground from '../images/bg-bots.jpg';
-import developmentBackground from '../images/bg-development.jpg';
-import designBackground from '../images/bg-design.jpg';
-import productionBackground from '../images/bg-production.jpg';
-import mobileBackground from '../images/bg-mobile.jpg';
+import promotionBackground from '../assets/images/bg-promotion.jpg';
+import botsBackground from '../assets/images/bg-bots.jpg';
+import developmentBackground from '../assets/images/bg-development.jpg';
+import designBackground from '../assets/images/bg-design.jpg';
+import productionBackground from '../assets/images/bg-production.jpg';
+import mobileBackground from '../assets/images/bg-mobile.jpg';
 
 export default function Services() {
 

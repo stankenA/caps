@@ -7,6 +7,10 @@
     border: 3px solid #000;
     overflow: hidden;
     position: relative;
+
+    @media screen and (max-width: 1439px) {
+      height: 395px;
+    }
   }
 
   &__left {
@@ -14,6 +18,13 @@
     margin-top: 35px;
     margin-left: 52px;
     margin-right: 46px;
+
+    @media screen and (max-width: 1439px) {
+      width: 245px;
+      margin-top: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
   }
 
   &__title {
@@ -41,6 +52,10 @@
     margin-right: 72px;
     border-radius: 0 10px 10px 0;
     overflow: hidden;
+
+    @media screen and (max-width: 1439px) {
+      margin-right: 50px;
+    }
   }
 
   &__item {
@@ -66,7 +81,11 @@
     width: 372px;
     height: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+
+    @media screen and (max-width: 1439px) {
+      width: 275px;
+    }
   }
 
   &__item-content {
@@ -76,6 +95,13 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
+
+    @media screen and (max-width: 1439px) {
+      gap: 21px;
+      width: 335px;
+      margin-left: 8px;
+      margin-top: 35px;
+    }
   }
 
   &__item-title {
@@ -84,6 +110,10 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 30px;
+    }
   }
 
   &__item-subtitle {
@@ -92,6 +122,10 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 20px;
+    }
   }
 
   &__item-txt {
@@ -101,6 +135,10 @@
     line-height: 136.336%;
     margin: 0;
     opacity: .7;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 14px;
+    }
   }
 
   &__voice {
@@ -114,6 +152,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+    @media screen and (max-width: 1439px) {
+      height: 50px;
+    }
   }
 
   &__voice-corner {
@@ -121,7 +163,7 @@
     position: absolute;
     bottom: -5px;
     left: -7px;
-    background: url(../images/voice-corner.svg) no-repeat center / contain;
+    background: url(../assets/images/voice-corner.svg) no-repeat center / contain;
     width: 40px;
     height: 30px;
   }
@@ -157,6 +199,10 @@
     visibility: visible;
     cursor: pointer;
 
+    @media screen and (max-width: 1439px) {
+      height: 30px;
+    }
+
     &_hidden {
       opacity: 0;
       visibility: hidden;
@@ -171,6 +217,10 @@
     right: 0;
     overflow: hidden;
 
+    @media screen and (max-width: 1439px) {
+      width: 115px;
+    }
+
     &:hover {
       .about__arrow {
         right: 10px;
@@ -180,11 +230,16 @@
 
   &__button-bg {
     @include props-for-background-rotation;
-    background: url(../images/bg-development.jpg) no-repeat center / cover;
+    background: url(../assets/images/bg-development.jpg) no-repeat center / cover;
     opacity: 1;
     visibility: visible;
     top: -96%;
     left: -416%;
+
+    @media screen and (max-width: 1439px) {
+      top: -126%;
+      left: -553%;
+    }
   }
 
   &__arrow {
@@ -200,6 +255,10 @@
     right: 21px;
     z-index: 3;
     @include transition;
+
+    @media screen and (max-width: 1439px) {
+      right: 12px;
+    }
   }
 
   &__nav {

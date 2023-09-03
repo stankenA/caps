@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
-import logo from '../images/caps-logo.svg';
+import logo from '../assets/images/caps-logo.svg';
 import OrderButton from './OrderButton';
 
 export default function HeaderMenu() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import eagleQR from '../../images/qr-eagle.png';
-import plane from '../../images/plane.png';
+import eagleQR from '../../assets/images/qr-eagle.png';
+import plane from '../../assets/images/plane.png';
 
 export default function CasesCard() {
 

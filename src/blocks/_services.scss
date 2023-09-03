@@ -140,7 +140,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-development.jpg) no-repeat center;
+        background: url(../assets/images/bg-development.jpg) no-repeat center;
       }
 
       &:hover {
@@ -163,7 +163,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-promotion.jpg) no-repeat center;
+        background: url(../assets/images/bg-promotion.jpg) no-repeat center;
       }
 
       &:hover {
@@ -186,7 +186,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-design.jpg) no-repeat center;
+        background: url(../assets/images/bg-design.jpg) no-repeat center;
       }
 
       &:hover {
@@ -209,7 +209,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-production.jpg) no-repeat center;
+        background: url(../assets/images/bg-production.jpg) no-repeat center;
       }
 
       &:hover {
@@ -232,7 +232,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-bots.jpg) no-repeat center;
+        background: url(../assets/images/bg-bots.jpg) no-repeat center;
       }
 
       &:hover {
@@ -255,7 +255,7 @@
 
       &::after {
         @include props-for-background-rotation;
-        background: url(../images/bg-mobile.jpg) no-repeat center;
+        background: url(../assets/images/bg-mobile.jpg) no-repeat center;
       }
 
       &:hover {
@@ -424,7 +424,7 @@
   &__checkmark {
     width: 24px;
     height: 24px;
-    background: url(../images/checkmark.svg) no-repeat center / contain;
+    background: url(../assets/images/checkmark.svg) no-repeat center / contain;
     opacity: .25;
 
     &_checked {
@@ -527,7 +527,7 @@
     &::after {
       content: '';
       display: block;
-      background: url(../images/white-arrow.svg) no-repeat center / contain;
+      background: url(../assets/images/white-arrow.svg) no-repeat center / contain;
       width: 25px;
       height: 25px;
     }

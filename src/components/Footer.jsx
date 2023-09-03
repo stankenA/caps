@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
-import logoIcon from '../images/caps-logo.svg';
+import logoIcon from '../assets/images/caps-logo.svg';
 
 export default function Footer() {
 

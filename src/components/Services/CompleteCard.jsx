@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import capsLogo from '../../images/caps-logo-white.svg';
+import capsLogo from '../../assets/images/caps-logo-white.svg';
 
 export default function CompleteCard({ isCardComplete }) {
   return (

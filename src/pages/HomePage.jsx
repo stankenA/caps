@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
-import logo from '../images/caps-home-logo.svg';
-import whatsappIcon from '../images/whatsapp-icon.svg';
-import telegramIcon from '../images/telegram-icon.svg';
-import vkIcon from '../images/vk-icon.svg';
+import logo from '../assets/images/caps-home-logo.svg';
+import whatsappIcon from '../assets/images/whatsapp-icon.svg';
+import telegramIcon from '../assets/images/telegram-icon.svg';
+import vkIcon from '../assets/images/vk-icon.svg';
 
 export default function Main() {
   return (
