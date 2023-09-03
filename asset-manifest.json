@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.f3bf1b9b.css",
-    "main.js": "/caps/static/js/main.617eb5cd.js",
+    "main.css": "/caps/static/css/main.163372fc.css",
+    "main.js": "/caps/static/js/main.da8fed06.js",
     "static/media/Jain_-_Makeba_51573353.mp3": "/caps/static/media/Jain_-_Makeba_51573353.90a5292357bc08f28f77.mp3",
     "static/media/caps-logo-white.svg": "/caps/static/media/caps-logo-white.2e6a2216770edafe67f201be783fa651.svg",
     "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
@@ -17,7 +17,6 @@
     "static/media/bg-eagle.jpg": "/caps/static/media/bg-eagle.eca0003b04221cb61e1d.jpg",
     "static/media/about-img.jpg": "/caps/static/media/about-img.11a8bb5477e891e007e2.jpg",
     "static/media/plane.png": "/caps/static/media/plane.2aec5058b95150075b13.png",
-    "static/media/about-me.jpg": "/caps/static/media/about-me.83527b4bea2f8e3af64d.jpg",
     "static/media/androidandapple.svg": "/caps/static/media/androidandapple.bc9fc3770331b344d82e78fcc90e43e7.svg",
     "static/media/apple.svg": "/caps/static/media/apple.b7aaeb4278c54106df9634a734e493ba.svg",
     "static/media/whatsapp-icon-black.svg": "/caps/static/media/whatsapp-icon-black.9a552db1c21d2c73452f.svg",
@@ -33,11 +32,11 @@
     "static/media/pause-icon.svg": "/caps/static/media/pause-icon.8d8c3bb50f617ec94e083c98ce396578.svg",
     "static/media/voice-corner.svg": "/caps/static/media/voice-corner.d0b2fcf21fdb5e75b412.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
-    "main.f3bf1b9b.css.map": "/caps/static/css/main.f3bf1b9b.css.map",
-    "main.617eb5cd.js.map": "/caps/static/js/main.617eb5cd.js.map"
+    "main.163372fc.css.map": "/caps/static/css/main.163372fc.css.map",
+    "main.da8fed06.js.map": "/caps/static/js/main.da8fed06.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3bf1b9b.css",
-    "static/js/main.617eb5cd.js"
+    "static/css/main.163372fc.css",
+    "static/js/main.da8fed06.js"
   ]
 }
