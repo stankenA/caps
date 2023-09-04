@@ -7,11 +7,11 @@ import logoIcon from '../assets/images/caps-logo.svg';
 export default function Footer() {
 
   return (
-    <Fade direction='down' triggerOnce>
+    <Fade direction='up' triggerOnce>
       <footer className="footer">
         <Link className="footer__logo-link" to='/'>
-          <img src={logoIcon} alt="CAPS logo" className="footer__logo" />
-        </Link>
+          < img src={logoIcon} alt="CAPS logo" className="footer__logo" />
+        </Link >
         <ul className="footer__container footer__container_nav-1 list">
           <li className="footer__item">
             <Link className="footer__link link" to='/services'>
@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="footer__map">
           Я КАРТА
         </div>
-      </footer>
-    </Fade>
+      </footer >
+    </Fade >
   )
 }
