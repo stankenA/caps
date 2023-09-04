@@ -59,14 +59,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 847px;
+    width: 800px;
     height: 100%;
-    margin-left: 46px;
+    margin-left: 75px;
     background-color: #000;
     border-radius: 0px 10px 10px 0px;
     @include transition(2s);
     opacity: 1;
     visibility: visible;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @media screen and (max-width: 1439px) {
       width: 612px;
@@ -85,26 +88,26 @@
       transform: translateX(-120%);
     }
 
-    &_some {
-      background: url(../assets/images/bg-some-case.jpg) no-repeat;
-    }
-
-    &_some2 {
-      background: url(../assets/images/bg-some-case2.jpg) no-repeat;
-    }
-
-    &_some3 {
-      background: aqua;
-    }
-
     &_eagle {
-      background: url(../assets/images/bg-eagle.jpg) no-repeat;
+      background-image: url(../assets/images/bg-eagle.jpg);
 
       @media screen and (max-width: 1439px) {
-        background-size: cover;
         background-position: -32px;
       }
     }
+
+    &_rzd {
+      background-image: url(../assets/images/cases-rzd-bg.jpg);
+    }
+
+    &_hockey {
+      background-image: url(../assets/images/cases-hockey-bg.jpg);
+    }
+
+    &_final {
+      background-image: url(../assets/images/cases-final-bg.jpg);
+    }
+
   }
 
   &__img {
@@ -112,15 +115,106 @@
     position: absolute;
     @include transition;
 
-    &_eagle {
+    &_plane {
       top: 106px;
-      left: -37px;
+      left: -93px;
       animation: cases-plane 2s ease;
 
       @media screen and (max-width: 1439px) {
         top: 111px;
         left: -42px;
         width: 323px;
+      }
+    }
+
+    &_train {
+      top: 170px;
+      left: -94px;
+      width: 565px;
+
+      @media screen and (max-width: 1439px) {
+        top: 169px;
+        left: -59px;
+        width: 422px;
+      }
+    }
+
+    &_rzd-logo {
+      width: 357px;
+      top: 54px;
+      left: 50px;
+      z-index: -1;
+
+      @media screen and (max-width: 1439px) {
+        width: 225px;
+        top: 51px;
+        left: 47px;
+      }
+    }
+
+    &_male {
+      top: 165px;
+      left: -70px;
+
+      @media screen and (max-width: 1439px) {
+        top: 187px;
+        left: -36px;
+        width: 150px;
+      }
+    }
+
+    &_woman {
+      left: 163px;
+      top: 73px;
+
+      @media screen and (max-width: 1439px) {
+        left: 140px;
+        top: 72px;
+        width: 150px;
+      }
+    }
+
+    &_granny {
+      bottom: 10px;
+      left: 273px;
+
+      @media screen and (max-width: 1439px) {
+        bottom: -6px;
+        left: 221px;
+        width: 120px;
+      }
+    }
+
+    &_berry {
+      top: 60px;
+      left: 322px;
+
+      @media screen and (max-width: 1439px) {
+        top: 8px;
+        left: 228px;
+        width: 80px
+      }
+    }
+
+    &_planet {
+      top: 0;
+      left: 17px;
+
+      @media screen and (max-width: 1439px) {
+        top: 0;
+        left: 0;
+        width: 144px;
+      }
+    }
+
+    &_rocket {
+      bottom: 33px;
+      left: 138px;
+
+      @media screen and (max-width: 1439px) {
+        bottom: 31px;
+        left: 129px;
+        width: 90px;
       }
     }
   }
@@ -174,14 +268,9 @@
 
   &__links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 45px;
-
-    @media screen and (max-width: 1439px) {
-      justify-content: flex-start;
-      gap: 12px;
-    }
+    gap: 25px;
   }
 
   &__qr {
@@ -203,6 +292,10 @@
     line-height: 89%;
     text-decoration-line: underline;
     @include transition;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 18px;
+    }
 
     &:hover {
       opacity: .7;
@@ -250,5 +343,15 @@
     &_white {
       border-color: #fff;
     }
+  }
+
+  &__bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 128px;
+    height: 100%;
+    background: linear-gradient(174deg, #0096E2 -6.64%, #00CDD8 31.81%, #8D5CFE 75.84%, #D50BFF 112.42%);
   }
 }

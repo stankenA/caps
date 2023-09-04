@@ -3,6 +3,18 @@ import React, { useState } from 'react';
 import eagleQR from '../../assets/images/qr-eagle.png';
 import plane from '../../assets/images/plane.png';
 
+import train from '../../assets/images/train.png';
+import rzdLogo from '../../assets/images/rzd-logo.svg';
+
+import maleFace from '../../assets/images/cases-male-face.png';
+import womanFace from '../../assets/images/cases-woman-face.png';
+import granny from '../../assets/images/cases-granny.png';
+import planet from '../../assets/images/cases-planet.png';
+import berry from '../../assets/images/cases-berry.png';
+import rocket from '../../assets/images/cases-rocket.png';
+
+import capsLogo from '../../assets/images/caps-logo-white.svg';
+
 export default function CasesCard() {
 
   const [activeCard, setActiveCard] = useState(0);
@@ -12,37 +24,47 @@ export default function CasesCard() {
       title: 'Eagle Flight',
       brief: 'Аренда частного самолета для бизнес поездок и путешествий',
       type: 'Многостраничный сайт описание продукта',
-      img: plane,
+      img: [{ url: plane, name: 'plane' }],
       qr: eagleQR,
+      action: 'ознакомиться',
       link: '#',
       modifier: 'eagle',
     },
     {
-      title: 'Some Case',
-      brief: 'Something',
+      title: 'РЖД СЗППК',
+      brief: 'Сайт РЖД блин че еще тут говорить',
       type: 'Многостраничный сайт описание продукта',
-      img: plane,
+      img: [{ url: train, name: 'train' }, { url: rzdLogo, name: 'rzd-logo' }],
       qr: eagleQR,
+      action: 'ознакомиться',
       link: '#',
-      modifier: 'some',
+      modifier: 'rzd',
     },
     {
-      title: 'Some Casesss',
-      brief: 'Чё?',
+      title: 'Хоккейный Пятачок',
+      brief: 'Сайт РЖД блин че еще тут говорить',
       type: 'Многостраничный сайт описание продукта',
-      img: plane,
       qr: eagleQR,
+      action: 'ознакомиться',
       link: '#',
-      modifier: 'some2',
+      modifier: 'hockey',
     },
     {
-      title: 'Something here',
-      brief: 'Чё?',
+      title: 'Ваш новый сайт',
+      brief: 'Такой, каким вы его полюбите',
       type: 'Многостраничный сайт описание продукта',
-      img: plane,
-      qr: eagleQR,
+      img: [
+        { url: maleFace, name: 'male' },
+        { url: womanFace, name: 'woman' },
+        { url: granny, name: 'granny' },
+        { url: planet, name: 'planet' },
+        { url: berry, name: 'berry' },
+        { url: rocket, name: 'rocket' },
+      ],
+      qr: capsLogo,
+      action: 'заказать',
       link: '#',
-      modifier: 'some3',
+      modifier: 'final',
     },
   ];
 
@@ -74,7 +96,11 @@ export default function CasesCard() {
             style={{ zIndex: Math.floor(100 / (i + 1)) }}
             key={item.title}
           >
-            <img src={plane} alt="Самолёт" className={`cases__img cases__img_${item.modifier}`} />
+            {item.img
+              ? item.img.map((img) => (
+                <img src={img.url} alt={img.name} className={`cases__img cases__img_${img.name}`} key={img.name} />
+              ))
+              : ''}
             <div className="cases__content">
               <h3 className="cases__subtitle">
                 {item.title}
@@ -87,7 +113,7 @@ export default function CasesCard() {
               </p>
               <div className="cases__links">
                 <img src={item.qr} alt="QR-код" className="cases__qr" />
-                <a href={item.link} className="cases__link" target="_blank" rel="noreferrer">ознакомиться</a>
+                <a href={item.link} className="cases__link" target="_blank" rel="noreferrer">{item.action}</a>
               </div>
             </div>
           </li>
@@ -96,6 +122,7 @@ export default function CasesCard() {
       <button type="button" className="cases__button button" onClick={handleNextBtn}>
         <span className={`cases__arrow ${activeCard === 1 ? 'cases__arrow_white' : ''}`}></span>
       </button>
+      <span className="cases__bg"></span>
     </div>
   )
 }
