@@ -11,6 +11,11 @@
     min-height: unset;
   }
 
+  @media screen and (max-width: 767px) {
+    border-radius: 5px;
+    min-height: 798px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -21,6 +26,11 @@
 
     @media screen and (max-width: 1023px) {
       padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      padding: 23px 13px;
     }
   }
 
@@ -38,6 +48,12 @@
     @media screen and (max-width: 1023px) {
       width: 192px;
     }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -54,6 +70,10 @@
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 22px;
     }
 
     &_white {
@@ -77,9 +97,19 @@
       line-height: 175%;
     }
 
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+
     &_white {
       color: #fff;
       max-width: 264px;
+    }
+
+    &_complete {
+      @media screen and (max-width: 767px) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -97,6 +127,13 @@
     @media screen and (max-width: 1023px) {
       grid-template-columns: repeat(3, 150px);
       grid-template-rows: repeat(2, 150px);
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: unset;
+      grid-auto-rows: 1fr;
+      gap: 10px;
     }
   }
 
@@ -126,6 +163,10 @@
 
     @media screen and (max-width: 1023px) {
       padding: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 11px 13px;
     }
 
     &_development {
@@ -287,6 +328,10 @@
     @media screen and (max-width: 1023px) {
       font-size: 26px;
     }
+
+    @media screen and (max-width: 374px) {
+      font-size: 24px;
+    }
   }
 
   &__card {
@@ -303,6 +348,10 @@
 
     &_active {
       transform: translateX(0);
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
     }
   }
 
@@ -326,6 +375,11 @@
       padding-right: 10px;
       width: 38%;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 280px;
+    }
   }
 
   &__card-right {
@@ -342,6 +396,12 @@
       flex-grow: unset;
       width: 62%;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: unset;
+      flex-grow: 1;
+    }
   }
 
   &__card-background {
@@ -357,6 +417,11 @@
     @media screen and (max-width: 1439px) {
       left: -105%;
       top: -109%;
+    }
+
+    @media screen and (max-width: 767px) {
+      left: -126%;
+      top: -99%;
     }
   }
 
@@ -386,6 +451,11 @@
       font-size: 18px;
       text-align: center;
       line-height: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 26px;
     }
 
     &_active {
@@ -419,6 +489,12 @@
       width: 44px;
       height: 44px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 29px;
+      height: 29px;
+
+    }
   }
 
   &__checkmark {
@@ -426,6 +502,11 @@
     height: 24px;
     background: url(../assets/images/checkmark.svg) no-repeat center / contain;
     opacity: .25;
+
+    @media screen and (max-width: 767px) {
+      width: 13px;
+      height: 13px;
+    }
 
     &_checked {
       opacity: 1;
@@ -484,6 +565,11 @@
       height: 40px;
     }
 
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 45px;
+    }
+
     &:hover {
       border-color: #fff;
     }
@@ -505,6 +591,11 @@
     @media screen and (max-width: 1023px) {
       width: 95%;
       height: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 10px;
+      height: 45px;
     }
   }
 
@@ -564,6 +655,11 @@
       height: 80px;
     }
 
+    @media screen and (max-width: 767px) {
+      width: unset;
+      flex-grow: 1;
+    }
+
     &:hover {
       border-color: #fff;
     }
@@ -612,6 +708,11 @@
       padding: 10px 10px 0 10px;
     }
 
+    @media screen and (max-width: 767px) {
+      min-height: 174px;
+      padding: 14px 14px 0 14px;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -639,6 +740,10 @@
       padding: 30px 20px;
     }
 
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
     &_active {
       transform: translate(0);
     }
@@ -651,6 +756,11 @@
 
     @media screen and (max-width: 1023px) {
       width: 342px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      flex-grow: 1;
     }
   }
 
@@ -677,9 +787,20 @@
       height: 45px;
     }
 
+    @media screen and (max-width: 767px) {
+      margin-top: auto;
+      margin-bottom: 25px;
+    }
+
     &:hover {
       color: #fff;
       background-color: #000;
+    }
+  }
+
+  &__complete-logo {
+    @media screen and (max-width: 767px) {
+      width: 100%;
     }
   }
 }

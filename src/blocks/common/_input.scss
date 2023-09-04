@@ -17,6 +17,12 @@
     height: 40px;
     font-size: 14px;
     padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 45px;
+    font-size: 15px;
   }
 
   &:focus-visible {
