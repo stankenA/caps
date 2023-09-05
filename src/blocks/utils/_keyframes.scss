@@ -45,3 +45,23 @@
     opacity: 1;
   }
 }
+
+@keyframes plane-flight {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  25% {
+    transform: translateX(0);
+  }
+
+  70% {
+    rotate: 0deg;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    rotate: -55deg;
+    transform: translateY(-8%) translateX(180%);
+  }
+}
