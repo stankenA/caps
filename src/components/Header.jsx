@@ -11,8 +11,8 @@ export default function Header() {
   const routesPaths = ['/services', '/services/*', '/cases', '/about', '/contacts'];
 
   return (
-    <Fade direction='down' triggerOnce>
-      <header className="header">
+    <header className="header">
+      <Fade direction='down' triggerOnce>
         <div className="header__top">
           <div className="header__live">
             <p className="header__txt">
@@ -35,12 +35,12 @@ export default function Header() {
             </Marquee>
           </div>
         </div>
-        <Routes>
-          {routesPaths.map((path) => (
-            <Route path={path} element={<HeaderMenu />} key={path} />
-          ))}
-        </Routes>
-      </header >
-    </Fade>
+      </Fade>
+      <Routes>
+        {routesPaths.map((path) => (
+          <Route path={path} element={<HeaderMenu />} key={path} />
+        ))}
+      </Routes>
+    </header >
   )
 }
