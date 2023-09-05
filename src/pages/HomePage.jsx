@@ -4,9 +4,6 @@ import { Fade } from 'react-awesome-reveal';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../assets/images/caps-home-logo.svg';
-import whatsappIcon from '../assets/images/whatsapp-icon.svg';
-import telegramIcon from '../assets/images/telegram-icon.svg';
-import vkIcon from '../assets/images/vk-icon.svg';
 
 export default function Main() {
   return (
@@ -39,13 +36,13 @@ export default function Main() {
           </Link>
           <div className="home__socials">
             <Link className="home__socials-link link">
-              <img src={whatsappIcon} alt="whatsapp icon" className="home__socials-icon" />
+              <span className="home__socials-icon home__socials-icon_whatsapp"></span>
             </Link>
             <Link className="home__socials-link link">
-              <img src={telegramIcon} alt="telegram icon" className="home__socials-icon" />
+              <span className="home__socials-icon home__socials-icon_telegram"></span>
             </Link>
             <Link className="home__socials-link link">
-              <img src={vkIcon} alt="vk icon" className="home__socials-icon" />
+              <span className="home__socials-icon home__socials-icon_vk"></span>
             </Link>
           </div>
         </Fade>
