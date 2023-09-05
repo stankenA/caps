@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/caps/static/css/main.d9bac9c1.css",
-    "main.js": "/caps/static/js/main.518c17ff.js",
+    "main.js": "/caps/static/js/main.d05d3563.js",
     "static/media/Jain_-_Makeba_51573353.mp3": "/caps/static/media/Jain_-_Makeba_51573353.90a5292357bc08f28f77.mp3",
     "static/media/caps-logo-white.svg": "/caps/static/media/caps-logo-white.2e6a2216770edafe67f201be783fa651.svg",
     "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
@@ -43,10 +43,10 @@
     "static/media/voice-corner.svg": "/caps/static/media/voice-corner.d0b2fcf21fdb5e75b412.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
     "main.d9bac9c1.css.map": "/caps/static/css/main.d9bac9c1.css.map",
-    "main.518c17ff.js.map": "/caps/static/js/main.518c17ff.js.map"
+    "main.d05d3563.js.map": "/caps/static/js/main.d05d3563.js.map"
   },
   "entrypoints": [
     "static/css/main.d9bac9c1.css",
-    "static/js/main.518c17ff.js"
+    "static/js/main.d05d3563.js"
   ]
 }
