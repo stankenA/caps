@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../assets/images/caps-home-logo.svg';
 import whatsappIcon from '../assets/images/whatsapp-icon.svg';
@@ -49,11 +50,11 @@ export default function Main() {
           </div>
         </Fade>
       </div>
-      <Link className="home__link home__link_contacts link" to='/contacts'>
+      <AnchorLink className="home__link home__link_contacts link" href='#contacts'>
         <p className="home__link-txt">
           Контакты
         </p>
-      </Link>
+      </AnchorLink>
       <form className="home__form">
         <div className="home__form-left">
           <h2 className="home__form-title">

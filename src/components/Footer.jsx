@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <Fade direction='up' triggerOnce>
-      <footer className="footer">
+      <footer className="footer" id="contacts">
         <Link className="footer__logo-link" to='/'>
           < img src={logoIcon} alt="CAPS logo" className="footer__logo" />
         </Link >
@@ -19,7 +19,7 @@ export default function Footer() {
             </Link>
           </li>
           <li className="footer__item">
-            <Link className="footer__link link" to='/contacts'>
+            <Link className="footer__link link" to='#'>
               Контакты
             </Link>
           </li>
