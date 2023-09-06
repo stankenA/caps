@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 
-import poridgeImg from '../assets/images/about-img.jpg';
-
 import AudioMessage from '../components/AudioMessage';
-import audioManagement from '../assets/voices/Jain_-_Makeba_51573353.mp3';
+import { aboutArr, aboutNavArr } from '../utils/constants';
 
 export default function AboutPage() {
 
@@ -17,42 +15,9 @@ export default function AboutPage() {
     }
   }
 
-  const aboutArr = [
-    {
-      img: poridgeImg,
-      title: 'Сандерс',
-      subtitle: 'Директор по отстатию',
-      txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
-      audio: audioManagement,
-    },
-    {
-      img: poridgeImg,
-      title: 'Никита',
-      subtitle: 'Директор по развитию, CEO',
-      txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
-      audio: audioManagement,
-    },
-    {
-      img: poridgeImg,
-      title: 'Ноунейм',
-      subtitle: 'Местный поридж',
-      txt: '“Короче, все что вам Саня будет говорить, можете спокойно делить на 5 на 10, так какон пиздабол, НО! Если речь идет о цене в нашей смете - тут он прав, вы уж извините.”',
-      audio: audioManagement,
-    },
-    {
-      img: poridgeImg,
-      title: 'Артём',
-      subtitle: 'Местный кринж',
-      txt: '“👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎”',
-      audio: audioManagement,
-    },
-  ];
-
-  const aboutNavArr = ['management', 'design', 'smm', 'programming'];
-
   return (
-    <Fade direction="left">
-      <section className="about">
+    <Fade direction="left" triggerOnce>
+      <section className="about" id="about">
         <div className="about__card">
           <div className="about__left">
             <h2 className="about__title">

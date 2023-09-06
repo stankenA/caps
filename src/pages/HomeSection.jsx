@@ -7,25 +7,25 @@ import logo from '../assets/images/caps-home-logo.svg';
 
 export default function Main() {
   return (
-    <section className="home">
-      <Link className="home__logo link" to='/'>
+    <section className="home" id="home">
+      <AnchorLink className="home__logo link" href='#home'>
         <img src={logo} alt="logo" className="home__logo-img" />
-      </Link>
-      <Link className="home__link home__link_services link" to='/services'>
+      </AnchorLink>
+      <AnchorLink className="home__link home__link_services link" href='#services'>
         <p className="home__link-txt">
           Услуги
         </p>
-      </Link>
-      <Link className="home__link home__link_cases link" to='/cases'>
+      </AnchorLink>
+      <AnchorLink className="home__link home__link_cases link" href='#cases'>
         <p className="home__link-txt">
           Кейсы
         </p>
-      </Link>
-      <Link className="home__link home__link_about link" to='/about'>
+      </AnchorLink>
+      <AnchorLink className="home__link home__link_about link" href='#about'>
         <p className="home__link-txt">
           О нас
         </p>
-      </Link>
+      </AnchorLink>
       <div className="home__info">
         <Fade direction='up' triggerOnce>
           <Link className="home__info-link link" to='mailto:caps@suka.nahuy'>

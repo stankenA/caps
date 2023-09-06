@@ -6,19 +6,27 @@ import CompleteCard from '../components/Services/CompleteCard';
 
 import { useForm } from '../hooks/useForm';
 
-import whatsappIcon from '../assets/images/whatsapp-icon.svg';
-import vkIcon from '../assets/images/vk-icon.svg';
-import telegramIcon from '../assets/images/telegram-icon.svg';
-import appleIcon from '../assets/images/apple.svg';
-import androidIcon from '../assets/images/android.svg';
-import androidAndAppleIcon from '../assets/images/androidandapple.svg';
-
 import promotionBackground from '../assets/images/bg-promotion.jpg';
 import botsBackground from '../assets/images/bg-bots.jpg';
 import developmentBackground from '../assets/images/bg-development.jpg';
 import designBackground from '../assets/images/bg-design.jpg';
 import productionBackground from '../assets/images/bg-production.jpg';
 import mobileBackground from '../assets/images/bg-mobile.jpg';
+
+import {
+  botsArr,
+  botsTitles,
+  designArr,
+  designTitles,
+  developmentArr,
+  developmentTitles,
+  mobileArr,
+  mobileTitles,
+  productionArr,
+  productionTitles,
+  promotionArr,
+  promotionTitles
+} from '../utils/constants';
 
 export default function Services() {
 
@@ -36,59 +44,14 @@ export default function Services() {
   const threeSlides = [0, 1, 2];
   const fourSlides = [0, 1, 2, 3];
 
-  // Информация, передаваемая в карточки
-  const promotionTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
-  const promotionArr = ['SEO', 'контекст', 'таргет', 'SMM', 'Email', 'комплекс'];
-
-  const botsTitles = ['1. выберите платформу', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
-  const botsArr = [
-    {
-      img: whatsappIcon,
-      name: 'whatsapp'
-    },
-    {
-      img: vkIcon,
-      name: 'vk'
-    },
-    {
-      img: telegramIcon,
-      name: 'telegram'
-    },
-  ];
-
-  const developmentTitles = ['1. выберите тип сайта', '2. Если сайт уже есть - поделитесь', '3. Оставьте свои данные', '4. Оставьте комментарий (опционально)'];
-  const developmentArr = ['лендинг', 'магазин', 'инфо-сайт', 'другое'];
-
-  const designTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
-  const designArr = ['афиша/баннер', 'веб-сайт', 'логотип', 'приложение', 'бренд бук', 'айдентика'];
-
-  const productionTitles = ['1. выберите желаемый продукт', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
-  const productionArr = ['монтаж', '2D анимация', 'саунд дизайн', 'джингл', 'озвучка', 'съемка'];
-
-  const mobileTitles = ['1. выберите платформу', '2. Оставьте свои данные', '3. Оставьте комментарий (опционально)'];
-  const mobileArr = [
-    {
-      img: appleIcon,
-      name: 'apple'
-    },
-    {
-      img: androidIcon,
-      name: 'android'
-    },
-    {
-      img: androidAndAppleIcon,
-      name: 'apple/android'
-    },
-  ];
-
   function handleServiceClick(service) {
     setActiveCard(service);
     setValues({ ...values, type: service });
   }
 
   return (
-    <Fade direction='left'>
-      <section className="services">
+    <Fade direction='left' triggerOnce>
+      <section className="services" id="services">
         <ServicesMain
           onServiceClick={handleServiceClick}
         />

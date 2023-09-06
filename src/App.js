@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './blocks/app.scss';
 
 import Header from './components/Header';
+import NotFound from './pages/NotFound';
 
-import HomePage from './pages/HomePage';
-import NotFoundPage from './pages/NotFoundPage';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
-import CasesPage from './pages/CasesPage';
-
-import Footer from './components/Footer';
+const HomeSection = lazy(() => import('./pages/HomeSection'));
+const AboutSection = lazy(() => import('./pages/AboutSection'));
+const ServicesSection = lazy(() => import('./pages/ServicesSection'));
+const CasesSection = lazy(() => import('./pages/CasesSection'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
@@ -18,11 +17,17 @@ function App() {
       <Header />
       <main className="wrapper">
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/services' element={<ServicesPage />} />
-          <Route path='/cases' element={<CasesPage />} />
-          <Route path='*' element={<NotFoundPage />} />
+          <Route path='/' element={
+            <>
+              <Suspense fallback={'Loading...'}>
+                <HomeSection />
+                <AboutSection />
+                <CasesSection />
+                <ServicesSection />
+              </Suspense>
+            </>
+          } />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
