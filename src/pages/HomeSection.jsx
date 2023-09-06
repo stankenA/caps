@@ -5,9 +5,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../assets/images/caps-home-logo.svg';
 
-export default function Main() {
+export default function Main({ reference }) {
+
   return (
-    <section className="home" id="home">
+    <section className="home" id="home" ref={reference}>
       <AnchorLink className="home__logo link" href='#home'>
         <img src={logo} alt="logo" className="home__logo-img" />
       </AnchorLink>

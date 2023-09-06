@@ -46,7 +46,6 @@ export default function Services() {
     type: '',
     context: [],
   });
-  console.log(values);
 
   // Стейт для раскрытия выбранной карточки
   const [activeCard, setActiveCard] = useState('');

@@ -98,6 +98,7 @@
       overflow: hidden;
       opacity: 0;
       visibility: hidden;
+      transform: translateY(-54px);
     }
 
     &_opened {
@@ -110,6 +111,7 @@
       @media screen and (max-width: 767px) {
         opacity: 1;
         visibility: visible;
+        transform: translateY(0);
       }
     }
   }

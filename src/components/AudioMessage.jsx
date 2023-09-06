@@ -24,13 +24,19 @@ export default function AudioMessage({ audio }) {
     barGap: 5,
   };
 
+
   useEffect(() => {
     const wavesurfer = WaveSurfer.create({ ...waveProps, container: audioContainerRef.current });
 
     wavesurfer.load(audio);
+
     wavesurfer.on('ready', () => {
       waveSurferRef.current = wavesurfer;
       setIsLoading(false);
+    });
+
+    wavesurfer.on('finish', () => {
+      setIsPlaying(false);
     });
 
     return () => wavesurfer.destroy();

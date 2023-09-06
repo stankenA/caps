@@ -5,42 +5,51 @@ import { Fade } from 'react-awesome-reveal';
 
 import logo from '../assets/images/caps-logo.svg';
 import OrderButton from './OrderButton';
+import { useEffect } from 'react';
 
-export default function HeaderMenu() {
+export default function HeaderMenu({ isHomeVisible }) {
 
   const [isOpened, setIsOpened] = useState(false);
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   const menuList = [
     {
       title: 'Услуги',
-      link: '/services'
+      link: '#services'
     },
     {
       title: 'Кейсы',
-      link: '/cases'
+      link: '#cases'
     },
     {
       title: 'О нас',
-      link: '/about'
+      link: '#about'
     },
     {
       title: 'Контакты',
       link: '#contacts'
     },
-  ]
+  ];
+
+  useEffect(() => {
+    if (!isHomeVisible) {
+      setIsShown(true)
+    } else {
+      setIsShown(false)
+    }
+  }, [isHomeVisible])
 
   return (
     <div className={`header__menu ${isOpened ? 'header__menu_opened' : ''} ${isShown ? 'header__menu_shown' : ''}`}>
-      <Link className="header__link" to='/'>
+      <AnchorLink className="header__link" href="#home">
         <img src={logo} alt="CAPS logo" className="header__logo" />
-      </Link>
+      </AnchorLink>
       <ul className="header__menu-list list">
         {menuList.map((el) => (
           <li key={el.title} className="header__menu-item" onClick={() => setIsOpened(false)}>
-            <Link className="header__menu-link link" to={el.link}>
+            <AnchorLink className="header__menu-link link" href={el.link}>
               {el.title}
-            </Link>
+            </AnchorLink>
           </li>
         ))}
       </ul>

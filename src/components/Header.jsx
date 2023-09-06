@@ -1,14 +1,12 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import { Routes, Route } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
 import HeaderMenu from './HeaderMenu';
 
-export default function Header() {
+export default function Header({ isHomeVisible }) {
 
   const projectsArr = ['СЗППК СПБ/РЖД', 'DEL ARTE', 'SPARTA', 'MK STROY', 'UNIQCKATE'];
-  const routesPaths = ['/services', '/services/*', '/cases', '/about', '/contacts'];
 
   return (
     <header className="header">
@@ -36,11 +34,7 @@ export default function Header() {
           </div>
         </div>
       </Fade>
-      <Routes>
-        {routesPaths.map((path) => (
-          <Route path={path} element={<HeaderMenu />} key={path} />
-        ))}
-      </Routes>
+      <HeaderMenu isHomeVisible={isHomeVisible} />
     </header >
   )
 }
