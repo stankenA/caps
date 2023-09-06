@@ -4,6 +4,7 @@ import './blocks/app.scss';
 
 import Header from './components/Header';
 import NotFound from './pages/NotFound';
+import Loader from './components/Loader';
 
 const HomeSection = lazy(() => import('./pages/HomeSection'));
 const AboutSection = lazy(() => import('./pages/AboutSection'));
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path='/' element={
             <>
-              <Suspense fallback={'Loading...'}>
+              <Suspense fallback={<Loader />}>
                 <HomeSection />
                 <AboutSection />
                 <CasesSection />

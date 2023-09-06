@@ -1,0 +1,10 @@
+.loader {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+  max-width: 350px;
+  animation: backgroundRotation 20s linear infinite;
+}

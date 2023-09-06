@@ -20,7 +20,7 @@ import appleIcon from '../assets/images/apple.svg';
 import androidIcon from '../assets/images/android.svg';
 import androidAndAppleIcon from '../assets/images/androidandapple.svg';
 
-import audioManagement from '../assets/voices/Jain_-_Makeba_51573353.mp3';
+import audioManagement from '../assets/voices/roblox-death-sound_1.mp3';
 import poridgeImg from '../assets/images/about-img.jpg';
 
 
@@ -152,3 +152,9 @@ export const aboutArr = [
 ];
 
 export const aboutNavArr = ['management', 'design', 'smm', 'programming'];
+
+export const observerOptions = {
+  threshold: 1,
+  rootMargin: '0px',
+  root: null,
+};
