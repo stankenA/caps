@@ -1,8 +1,14 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.5dec9d67.css",
-    "main.js": "/caps/static/js/main.6e8766af.js",
-    "static/media/Jain_-_Makeba_51573353.mp3": "/caps/static/media/Jain_-_Makeba_51573353.90a5292357bc08f28f77.mp3",
+    "main.css": "/caps/static/css/main.8dfac54b.css",
+    "main.js": "/caps/static/js/main.ad430700.js",
+    "static/js/520.acc46023.chunk.js": "/caps/static/js/520.acc46023.chunk.js",
+    "static/js/831.d5de54b1.chunk.js": "/caps/static/js/831.d5de54b1.chunk.js",
+    "static/js/143.5cab0735.chunk.js": "/caps/static/js/143.5cab0735.chunk.js",
+    "static/js/357.76bf7df4.chunk.js": "/caps/static/js/357.76bf7df4.chunk.js",
+    "static/js/642.1dda321e.chunk.js": "/caps/static/js/642.1dda321e.chunk.js",
+    "static/js/336.a351ca83.chunk.js": "/caps/static/js/336.a351ca83.chunk.js",
+    "static/js/268.16d3e4e2.chunk.js": "/caps/static/js/268.16d3e4e2.chunk.js",
     "static/media/caps-logo-white.svg": "/caps/static/media/caps-logo-white.2e6a2216770edafe67f201be783fa651.svg",
     "static/media/caps-home-logo.svg": "/caps/static/media/caps-home-logo.d12355e986826e89749031703d6d8de2.svg",
     "static/media/caps-logo.svg": "/caps/static/media/caps-logo.b1a53beb6dc8f85f59d98efebc772155.svg",
@@ -27,6 +33,7 @@
     "static/media/cases-berry.png": "/caps/static/media/cases-berry.fdcdc04c17fc6c0ec259.png",
     "static/media/cases-rocket.png": "/caps/static/media/cases-rocket.4e8eef3a37a6aa26411f.png",
     "static/media/cases-granny.png": "/caps/static/media/cases-granny.901eb64b204cec19835a.png",
+    "static/media/roblox-death-sound_1.mp3": "/caps/static/media/roblox-death-sound_1.a938e162340f44071acd.mp3",
     "static/media/androidandapple.svg": "/caps/static/media/androidandapple.bc9fc3770331b344d82e78fcc90e43e7.svg",
     "static/media/apple.svg": "/caps/static/media/apple.b7aaeb4278c54106df9634a734e493ba.svg",
     "static/media/whatsapp-icon-black.svg": "/caps/static/media/whatsapp-icon-black.9a552db1c21d2c73452f.svg",
@@ -43,11 +50,18 @@
     "static/media/voice-corner.svg": "/caps/static/media/voice-corner.d0b2fcf21fdb5e75b412.svg",
     "static/media/hamburger.svg": "/caps/static/media/hamburger.279b290741b3d3761602.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
-    "main.5dec9d67.css.map": "/caps/static/css/main.5dec9d67.css.map",
-    "main.6e8766af.js.map": "/caps/static/js/main.6e8766af.js.map"
+    "main.8dfac54b.css.map": "/caps/static/css/main.8dfac54b.css.map",
+    "main.ad430700.js.map": "/caps/static/js/main.ad430700.js.map",
+    "520.acc46023.chunk.js.map": "/caps/static/js/520.acc46023.chunk.js.map",
+    "831.d5de54b1.chunk.js.map": "/caps/static/js/831.d5de54b1.chunk.js.map",
+    "143.5cab0735.chunk.js.map": "/caps/static/js/143.5cab0735.chunk.js.map",
+    "357.76bf7df4.chunk.js.map": "/caps/static/js/357.76bf7df4.chunk.js.map",
+    "642.1dda321e.chunk.js.map": "/caps/static/js/642.1dda321e.chunk.js.map",
+    "336.a351ca83.chunk.js.map": "/caps/static/js/336.a351ca83.chunk.js.map",
+    "268.16d3e4e2.chunk.js.map": "/caps/static/js/268.16d3e4e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dec9d67.css",
-    "static/js/main.6e8766af.js"
+    "static/css/main.8dfac54b.css",
+    "static/js/main.ad430700.js"
   ]
 }
