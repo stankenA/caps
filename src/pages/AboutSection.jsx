@@ -8,7 +8,14 @@ import { useEffect } from 'react';
 
 export default function AboutPage() {
 
+  const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
+
+  useEffect(() => {
+    if (inView) {
+      setIsRendered(true);
+    }
+  }, [inView]);
 
   const [activeSlide, setActiveSlide] = useState(0);
   function handleNextBtn() {
@@ -20,7 +27,7 @@ export default function AboutPage() {
   }
 
   return (
-    <section className="about" id="about" ref={ref}>
+    <section className={`about ${isRendered ? 'about_shown' : ''}`} id="about" ref={ref}>
       <div className="about__card">
         <div className="about__left">
           <h2 className="about__title">

@@ -2,19 +2,17 @@ import React, { useState } from 'react';
 import { casesArr, observerOptions } from '../utils/constants';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useRef } from 'react';
 
 export default function CasesPage() {
 
-  const isRendered = useRef(false);
+  const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
+
   useEffect(() => {
     if (inView) {
-      isRendered.current = true;
+      setIsRendered(true);
     }
   }, [inView]);
-
-  console.log(inView)
 
   const [activeCard, setActiveCard] = useState(0);
   function handleNextBtn() {
@@ -25,12 +23,8 @@ export default function CasesPage() {
     }
   }
 
-  if (!isRendered) {
-    return '...'
-  }
-
   return (
-    <section className="cases" id="cases" ref={ref}>
+    <section className={`${isRendered ? 'cases cases_shown' : 'cases'}`} id="cases" ref={ref}>
       <div className="cases__card">
         <div className="cases__left">
           <h2 className="cases__title">

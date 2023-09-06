@@ -154,7 +154,7 @@ export const aboutArr = [
 export const aboutNavArr = ['management', 'design', 'smm', 'programming'];
 
 export const observerOptions = {
-  threshold: 1,
+  threshold: 0,
   rootMargin: '0px',
   root: null,
 };

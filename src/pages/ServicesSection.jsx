@@ -4,6 +4,8 @@ import ServicesCard from '../components/Services/ServicesCard';
 import CompleteCard from '../components/Services/CompleteCard';
 
 import { useForm } from '../hooks/useForm';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import promotionBackground from '../assets/images/bg-promotion.jpg';
 import botsBackground from '../assets/images/bg-bots.jpg';
@@ -21,6 +23,7 @@ import {
   developmentTitles,
   mobileArr,
   mobileTitles,
+  observerOptions,
   productionArr,
   productionTitles,
   promotionArr,
@@ -28,6 +31,15 @@ import {
 } from '../utils/constants';
 
 export default function Services() {
+
+  const [isRendered, setIsRendered] = useState(false);
+  const { ref, inView } = useInView(observerOptions);
+
+  useEffect(() => {
+    if (inView) {
+      setIsRendered(true);
+    }
+  }, [inView]);
 
   // Собираем данные инпутов с помощью кастомного хука
   const { values, handleChange, setValues } = useForm({
@@ -49,7 +61,7 @@ export default function Services() {
   }
 
   return (
-    <section className="services" id="services">
+    <section className={`services ${isRendered ? 'services_shown' : ''}`} id="services" ref={ref}>
       <ServicesMain
         onServiceClick={handleServiceClick}
       />

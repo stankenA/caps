@@ -1,5 +1,17 @@
 .about {
   margin-bottom: 150px;
+  @include transition(1.5s);
+  transform: translateX(-100%);
+  opacity: 0;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+
+  &_shown {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   &__card {
     width: 100%;
