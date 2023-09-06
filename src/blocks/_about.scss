@@ -107,6 +107,7 @@
       margin-right: 0;
       width: 100%;
       margin-bottom: 44px;
+      border-radius: 0px 0px 10px 10px;
     }
   }
 
@@ -368,11 +369,17 @@
     }
 
     @media screen and (max-width: 1023px) {
-      top: -1315%;
-      left: -50%;
-      transform: translateY(-50%) translateX(-50%);
-      width: 800px;
-      height: 800px;
+      top: -430px;
+      left: -35px;
+      width: 110%;
+      height: 110vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      top: -251px;
+      left: -38px;
+      width: 120%;
+      height: 120vw;
     }
   }
 
@@ -395,8 +402,8 @@
     }
 
     @media screen and (max-width: 1023px) {
-      transform: rotate(45deg) translateX(-50%);
-      right: 46%;
+      transform: rotate(45deg) translateX(0%) translateY(-65%);
+      right: 50%;
     }
   }
 

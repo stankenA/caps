@@ -1,10 +1,10 @@
 @keyframes backgroundRotation {
   0% {
-    transform: rotate(0);
+    rotate: 0deg;
   }
 
   100% {
-    transform: rotate(360deg);
+    rotate: 360deg;
   }
 }
 

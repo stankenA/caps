@@ -74,14 +74,15 @@
   }
 
   &__menu {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: var(--content-width);
     margin: 30px auto;
     @include transition(.8s);
+    display: none;
 
     @media screen and (max-width: 767px) {
+      display: flex;
       position: fixed;
       top: 0;
       left: 0;
