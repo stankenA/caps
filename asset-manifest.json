@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/caps/static/css/main.c52d0f26.css",
+    "main.css": "/caps/static/css/main.d5fdf979.css",
     "main.js": "/caps/static/js/main.bbffc25a.js",
     "static/js/520.4c7feed2.chunk.js": "/caps/static/js/520.4c7feed2.chunk.js",
     "static/js/806.f5c0b943.chunk.js": "/caps/static/js/806.f5c0b943.chunk.js",
@@ -48,7 +48,7 @@
     "static/media/voice-corner.svg": "/caps/static/media/voice-corner.d0b2fcf21fdb5e75b412.svg",
     "static/media/hamburger.svg": "/caps/static/media/hamburger.279b290741b3d3761602.svg",
     "static/media/checkmark.svg": "/caps/static/media/checkmark.db206bc4da12f069963c.svg",
-    "main.c52d0f26.css.map": "/caps/static/css/main.c52d0f26.css.map",
+    "main.d5fdf979.css.map": "/caps/static/css/main.d5fdf979.css.map",
     "main.bbffc25a.js.map": "/caps/static/js/main.bbffc25a.js.map",
     "520.4c7feed2.chunk.js.map": "/caps/static/js/520.4c7feed2.chunk.js.map",
     "806.f5c0b943.chunk.js.map": "/caps/static/js/806.f5c0b943.chunk.js.map",
@@ -57,7 +57,7 @@
     "642.ee607f9a.chunk.js.map": "/caps/static/js/642.ee607f9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c52d0f26.css",
+    "static/css/main.d5fdf979.css",
     "static/js/main.bbffc25a.js"
   ]
 }
