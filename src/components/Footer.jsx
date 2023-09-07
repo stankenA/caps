@@ -6,6 +6,7 @@ import logoIcon from '../assets/images/caps-logo.svg';
 import { useState } from 'react';
 import { observerOptions } from '../utils/constants';
 import { useEffect } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Footer() {
 
@@ -20,19 +21,19 @@ export default function Footer() {
 
   return (
     <footer className={`footer ${isRendered ? 'footer_shown' : ''}`} id="contacts" ref={ref}>
-      <Link className="footer__logo-link" to='/'>
+      <AnchorLink className="footer__logo-link" href="#home">
         < img src={logoIcon} alt="CAPS logo" className="footer__logo" />
-      </Link >
+      </AnchorLink >
       <ul className="footer__container footer__container_nav-1 list">
         <li className="footer__item">
-          <Link className="footer__link link" to='/services'>
+          <AnchorLink className="footer__link link" href="#services">
             Услуги
-          </Link>
+          </AnchorLink>
         </li>
         <li className="footer__item">
-          <Link className="footer__link link" to='#'>
+          <AnchorLink className="footer__link link" href='#contacts'>
             Контакты
-          </Link>
+          </AnchorLink>
         </li>
         <li className="footer__item">
           <button type="button" className="footer__link button">
@@ -53,12 +54,12 @@ export default function Footer() {
           </Link>
         </li>
         <li className="footer__item">
-          <Link className="footer__link link" to='/cases'>
+          <AnchorLink className="footer__link link" href="#cases">
             Кейсы
-          </Link>
+          </AnchorLink>
         </li>
         <li className="footer__item">
-          <Link className="footer__link link" to='/about'>
+          <Link className="footer__link link" href="#about">
             О нас
           </Link>
         </li>

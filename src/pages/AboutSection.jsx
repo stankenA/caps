@@ -6,7 +6,7 @@ import AudioMessage from '../components/AudioMessage';
 import { aboutArr, aboutNavArr, observerOptions } from '../utils/constants';
 import { useEffect } from 'react';
 
-export default function AboutPage() {
+export default function AboutSection() {
 
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);

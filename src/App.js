@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './blocks/app.scss';
 
@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Loader from './components/Loader';
 import { useInView } from 'react-intersection-observer';
 import { observerOptions } from './utils/constants';
+import Popup from './components/Popup';
 
 const HomeSection = lazy(() => import('./pages/HomeSection'));
 const AboutSection = lazy(() => import('./pages/AboutSection'));
@@ -15,11 +16,12 @@ const CasesSection = lazy(() => import('./pages/CasesSection'));
 const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
+  const [isPopupOpened, setIsPopupOpened] = useState(true);
   const { ref, inView } = useInView(observerOptions);
 
   return (
     <div className="page">
-      <Header isHomeVisible={inView} />
+      <Header isHomeVisible={inView} setIsPopupOpened={setIsPopupOpened} />
       <main className="wrapper">
         <Routes>
           <Route path='/' element={
@@ -27,7 +29,7 @@ function App() {
               <Suspense fallback={<Loader />}>
                 <HomeSection reference={ref} />
                 <AboutSection />
-                <CasesSection />
+                <CasesSection setIsPopupOpened={setIsPopupOpened} />
                 <ServicesSection />
               </Suspense>
             </>
@@ -36,6 +38,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Popup isOpened={isPopupOpened} setIsOpened={setIsPopupOpened} />
     </div>
   );
 }

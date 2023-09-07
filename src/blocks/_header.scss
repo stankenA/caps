@@ -207,12 +207,17 @@
     padding: 0;
     margin: 0;
     display: none;
+    @include transition;
 
     @media screen and (max-width: 767px) {
       display: block;
       width: 30px;
       height: 30px;
       background: url(../assets/images/hamburger.svg) no-repeat center / contain;
+
+      &_opened {
+        background-image: url(../assets/images/close-icon-black.svg);
+      }
     }
   }
 

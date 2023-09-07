@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import capsLogo from '../../assets/images/caps-logo-white.svg';
 
@@ -13,9 +13,9 @@ export default function CompleteCard({ isCardComplete }) {
           <br />
           На нашем сайте спрятан промокод, который даст вам <span className="services__complete-discount">скидку 10%</span>  на ваш заказ. Удачи ;&#41;
         </p>
-        <Link to='/' className="services__complete-link link">
+        <AnchorLink href='#home' className="services__complete-link link">
           на главную
-        </Link>
+        </AnchorLink>
       </div>
       <img src={capsLogo} alt="logo" className="services__complete-logo" />
     </div>

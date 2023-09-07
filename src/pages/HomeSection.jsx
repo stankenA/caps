@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../assets/images/caps-home-logo.svg';
 
-export default function Main({ reference }) {
+export default function HomeSection({ reference }) {
 
   return (
     <section className="home" id="home" ref={reference}>
@@ -65,7 +65,7 @@ export default function Main({ reference }) {
         <fieldset className="home__form-right">
           <input type="text" className="home__form-input" placeholder="Имя Фамилия" />
           <input type="tel" className="home__form-input" placeholder="+7 (999) 999-99-99" />
-          <button type="button" className="home__button button">
+          <button type="submit" className="home__button button">
             <p className="header__button-txt">Заказать</p>
           </button>
           <p className="home__form-politics">

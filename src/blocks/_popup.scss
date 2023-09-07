@@ -1,0 +1,123 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 140;
+  background-color: #0000002f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition;
+  opacity: 0;
+  visibility: hidden;
+
+  &_opened {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__wrapper {
+    width: 1136px;
+    border-radius: 10px;
+    background: #000;
+    box-sizing: border-box;
+    padding: 131px 145px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__txt-block {
+    width: 413px;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 340px;
+  }
+
+  &__txt {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+
+    &_black {
+      color: #000;
+      position: relative;
+      z-index: 1;
+      font-weight: 500;
+    }
+  }
+
+  &__form {
+    width: 341px;
+  }
+
+  &__img {
+    display: block;
+    margin-left: auto;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  &__fieldset {
+    margin-top: 27px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &__input {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    height: 49px;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #A5A5A5;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1440px;
+      height: 900px;
+      background: url(../assets/images/bg-development.jpg) no-repeat center / cover;
+      animation: backgroundRotation 20s infinite linear;
+    }
+  }
+
+  &__close {
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/close-icon-white.svg) no-repeat center / contain;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

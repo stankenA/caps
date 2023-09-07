@@ -4,10 +4,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Fade } from 'react-awesome-reveal';
 
 import logo from '../assets/images/caps-logo.svg';
-import OrderButton from './OrderButton';
 import { useEffect } from 'react';
 
-export default function HeaderMenu({ isHomeVisible }) {
+export default function HeaderMenu({ isHomeVisible, setIsPopupOpened }) {
 
   const [isOpened, setIsOpened] = useState(false);
   const [isShown, setIsShown] = useState(false);
@@ -53,8 +52,10 @@ export default function HeaderMenu({ isHomeVisible }) {
           </li>
         ))}
       </ul>
-      <OrderButton type={'button'} />
-      <button type="button" className="header__hamburger" onClick={() => setIsOpened(!isOpened)}></button>
+      <button type="button" className="header__button button" onClick={() => setIsOpened(true)}>
+        <p className="header__button-txt">Заказать</p>
+      </button>
+      <button type="button" className={`header__hamburger ${isOpened ? 'header__hamburger_opened' : ''}`} onClick={() => setIsOpened(!isOpened)}></button>
       <div className="header__info">
         <Fade direction='up'>
           <Link className="header__info-link link" to='mailto:caps@suka.nahuy'>

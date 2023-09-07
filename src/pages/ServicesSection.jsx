@@ -30,7 +30,7 @@ import {
   promotionTitles
 } from '../utils/constants';
 
-export default function Services() {
+export default function ServicesSection() {
 
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);

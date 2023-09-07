@@ -3,7 +3,7 @@ import { casesArr, observerOptions } from '../utils/constants';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-export default function CasesPage() {
+export default function CasesSection({ setIsPopupOpened }) {
 
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
@@ -21,6 +21,11 @@ export default function CasesPage() {
     } else {
       setActiveCard(activeCard + 1);
     }
+  }
+
+  function handlePopupOpen(evt) {
+    evt.preventDefault();
+    setIsPopupOpened(true);
   }
 
   return (
@@ -61,7 +66,12 @@ export default function CasesPage() {
                 </p>
                 <div className="cases__links">
                   <img src={item.qr} alt="QR-код" className="cases__qr" />
-                  <a href={item.link} className="cases__link" target="_blank" rel="noreferrer">{item.action}</a>
+                  <a href={item.link}
+                    className="cases__link"
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={item.action === 'заказать' ? handlePopupOpen : null}
+                  >{item.action}</a>
                 </div>
               </div>
             </li>

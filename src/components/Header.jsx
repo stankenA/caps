@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 import HeaderMenu from './HeaderMenu';
 
-export default function Header({ isHomeVisible }) {
+export default function Header({ isHomeVisible, setIsPopupOpened }) {
 
   const projectsArr = ['СЗППК СПБ/РЖД', 'DEL ARTE', 'SPARTA', 'MK STROY', 'UNIQCKATE'];
 
@@ -34,7 +34,7 @@ export default function Header({ isHomeVisible }) {
           </div>
         </div>
       </Fade>
-      <HeaderMenu isHomeVisible={isHomeVisible} />
+      <HeaderMenu isHomeVisible={isHomeVisible} setIsPopupOpened={setIsPopupOpened} />
     </header >
   )
 }
