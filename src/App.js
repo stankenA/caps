@@ -16,7 +16,7 @@ const CasesSection = lazy(() => import('./pages/CasesSection'));
 const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
-  const [isPopupOpened, setIsPopupOpened] = useState(true);
+  const [isPopupOpened, setIsPopupOpened] = useState(false);
   const { ref, inView } = useInView(observerOptions);
 
   return (
@@ -37,7 +37,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer setIsPopupOpened={setIsPopupOpened} />
       <Popup isOpened={isPopupOpened} setIsOpened={setIsPopupOpened} />
     </div>
   );

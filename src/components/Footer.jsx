@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 
 import logoIcon from '../assets/images/caps-logo.svg';
@@ -8,7 +7,7 @@ import { observerOptions } from '../utils/constants';
 import { useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-export default function Footer() {
+export default function Footer({ setIsPopupOpened }) {
 
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
@@ -36,22 +35,22 @@ export default function Footer() {
           </AnchorLink>
         </li>
         <li className="footer__item">
-          <button type="button" className="footer__link button">
+          <button type="button" className="footer__link button" onClick={() => setIsPopupOpened(true)}>
             Заказать
           </button>
         </li>
       </ul>
       <ul className="footer__container footer__container_nav-2 list">
         <li className="footer__item footer__item_icons">
-          <Link className="footer__icon-link link">
+          <a className="footer__icon-link link">
             <span className="footer__icon footer__icon_whatsapp"></span>
-          </Link>
-          <Link className="footer__icon-link link">
+          </a>
+          <a className="footer__icon-link link">
             <span className="footer__icon footer__icon_telegram"></span>
-          </Link>
-          <Link className="footer__icon-link link">
+          </a>
+          <a className="footer__icon-link link">
             <span className="footer__icon footer__icon_vk"></span>
-          </Link>
+          </a>
         </li>
         <li className="footer__item">
           <AnchorLink className="footer__link link" href="#cases">
@@ -59,26 +58,26 @@ export default function Footer() {
           </AnchorLink>
         </li>
         <li className="footer__item">
-          <Link className="footer__link link" href="#about">
+          <AnchorLink className="footer__link link" href="#about">
             О нас
-          </Link>
+          </AnchorLink>
         </li>
       </ul>
       <ul className="footer__container footer__container_info list">
         <li className="footer__item">
-          <Link className="footer__link footer__link_contacts link" to='mailto:caps@suka.nahuy'>
+          <a className="footer__link footer__link_contacts link" href="mailto:caps@suka.nahuy">
             caps@dam.tati
-          </Link>
+          </a>
         </li>
         <li className="footer__item">
-          <Link className="footer__link footer__link_contacts link" to='tel:+7(999)999-99-99'>
+          <a className="footer__link footer__link_contacts link" href="tel:+7(999)999-99-99">
             +7 (999) 999-99-99
-          </Link>
+          </a>
         </li>
         <li className="footer__item">
-          <Link className="footer__link footer__link_contacts link">
+          <a className="footer__link footer__link_contacts link" href="#">
             адрес
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="footer__map">

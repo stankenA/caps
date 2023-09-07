@@ -52,7 +52,7 @@ export default function HeaderMenu({ isHomeVisible, setIsPopupOpened }) {
           </li>
         ))}
       </ul>
-      <button type="button" className="header__button button" onClick={() => setIsOpened(true)}>
+      <button type="button" className="header__button button" onClick={() => setIsPopupOpened(true)}>
         <p className="header__button-txt">Заказать</p>
       </button>
       <button type="button" className={`header__hamburger ${isOpened ? 'header__hamburger_opened' : ''}`} onClick={() => setIsOpened(!isOpened)}></button>
