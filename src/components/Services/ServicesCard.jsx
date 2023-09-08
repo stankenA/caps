@@ -47,8 +47,8 @@ export default function ServicesCard({
   function submitForm(evt) {
     evt.preventDefault();
     onSubmit();
-    setValues({ context: [], type: '' })
-    console.log('boop');
+    console.log(values);
+    setValues({ context: [], type: '' });
   }
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import ServicesMain from '../components/Services/ServicesMain';
 import ServicesCard from '../components/Services/ServicesCard';
 import CompleteCard from '../components/Services/CompleteCard';
@@ -30,7 +30,7 @@ import {
   promotionTitles
 } from '../utils/constants';
 
-export default function ServicesSection() {
+const ServicesSection = memo(function ServicesSection() {
 
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
@@ -150,7 +150,11 @@ export default function ServicesSection() {
       />
       <CompleteCard
         isCardComplete={isCardComplete}
+        onClose={() => setActiveCard('')}
+        setIsCardComplete={() => setIsCardComplete(false)}
       />
     </section>
   )
-}
+});
+
+export default ServicesSection;

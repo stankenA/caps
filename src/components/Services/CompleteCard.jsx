@@ -1,9 +1,14 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import capsLogo from '../../assets/images/caps-logo-white.svg';
 
-export default function CompleteCard({ isCardComplete }) {
+export default function CompleteCard({ isCardComplete, onClose, setIsCardComplete }) {
+
+  function closeCard() {
+    onClose();
+    setIsCardComplete();
+  }
+
   return (
     <div className={`services__complete ${isCardComplete ? 'services__complete_active' : ''}`}>
       <div className="services__complete-left">
@@ -13,9 +18,9 @@ export default function CompleteCard({ isCardComplete }) {
           <br />
           На нашем сайте спрятан промокод, который даст вам <span className="services__complete-discount">скидку 10%</span>  на ваш заказ. Удачи ;&#41;
         </p>
-        <AnchorLink href='#home' className="services__complete-link link">
-          на главную
-        </AnchorLink>
+        <button type="button" className="services__complete-btn button" onClick={closeCard}>
+          закрыть
+        </button>
       </div>
       <img src={capsLogo} alt="logo" className="services__complete-logo" />
     </div>
