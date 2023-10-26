@@ -15,10 +15,10 @@
 
   @media screen and (max-width: 1023px) {
     grid-template-areas:
-      'logo contacts-plates'
-      'services cases'
-      'about contacts'
-      'consult consult';
+      "logo contacts-plates"
+      "services cases"
+      "about contacts"
+      "consult consult";
     grid-template-columns: repeat(2, minmax(150px, 269px));
     justify-content: center;
     margin-bottom: 80px;
@@ -54,12 +54,11 @@
     justify-content: center;
     background-color: #000;
     border-radius: 10px;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
 
     &_services {
-
       @media screen and (max-width: 1023px) {
         grid-area: services;
       }
@@ -87,7 +86,6 @@
     }
 
     &_cases {
-
       @media screen and (max-width: 1023px) {
         grid-area: cases;
       }
@@ -115,7 +113,6 @@
     }
 
     &_about {
-
       @media screen and (max-width: 1023px) {
         grid-area: about;
       }
@@ -167,7 +164,7 @@
     line-height: 40px;
     margin: 0;
     text-transform: uppercase;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     position: relative;
     z-index: 3;
 
@@ -180,7 +177,7 @@
     }
 
     @media screen and (max-width: 380px) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -332,7 +329,6 @@
   &__form-left {
     width: 224px;
 
-
     @media screen and (max-width: 767px) {
       width: 72%;
     }
@@ -392,7 +388,7 @@
   &__form-input {
     width: 100%;
     height: 49px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 10px;
     border: none;
     margin-bottom: 20px;
@@ -411,7 +407,7 @@
     }
 
     &::placeholder {
-      color: #A5A5A5;
+      color: #a5a5a5;
     }
   }
 
@@ -419,7 +415,7 @@
     font-weight: 250;
     font-size: 10px;
     line-height: 100%;
-    color: #3E3E3E;
+    color: #3e3e3e;
     margin-top: 14px;
 
     @media screen and (max-width: 767px) {
@@ -447,12 +443,13 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 1440px;
       height: 900px;
-      background: url(../assets/images/bg-development.jpg) no-repeat center / cover;
+      background: url(../assets/images/bg-development.jpg) no-repeat center /
+        cover;
       animation: backgroundRotation 20s infinite linear;
     }
   }

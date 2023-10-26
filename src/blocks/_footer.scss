@@ -15,9 +15,9 @@
     grid-template-columns: repeat(2, minmax(150px, 269px));
     grid-template-rows: 262px;
     grid-template-areas:
-      'footer-logo footer-map'
-      'footer-nav-1 footer-nav-2'
-      'footer-info footer-info ';
+      "footer-logo footer-map"
+      "footer-nav-1 footer-nav-2"
+      "footer-info footer-info ";
     gap: 8px;
     max-width: unset;
   }
@@ -105,7 +105,7 @@
     border: 1px solid #000000;
     border-radius: 5px;
     box-sizing: border-box;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     &:hover {
       background-color: #000000;
@@ -126,8 +126,8 @@
     justify-content: center;
     border: 1px solid #000000;
     border-radius: 5px;
-    transition: all .4s ease;
-
+    transition: all 0.4s ease;
+    cursor: pointer;
 
     @media screen and (max-width: 1023px) {
       width: 82px;

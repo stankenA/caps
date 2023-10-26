@@ -36,19 +36,20 @@
   }
 
   &__left {
-    margin-top: 35px;
-    margin-left: 52px;
+    padding-top: 35px;
+    padding-left: 52px;
     width: 264px;
+    box-sizing: border-box;
 
     @media screen and (max-width: 1439px) {
-      margin-left: 25px;
-      margin-top: 25px;
+      padding-left: 25px;
+      padding-top: 25px;
       width: 250px;
     }
 
     @media screen and (max-width: 1023px) {
       width: 55%;
-      margin-bottom: 22px;
+      padding-bottom: 22px;
     }
 
     @media screen and (max-width: 767px) {
@@ -185,7 +186,6 @@
     &_final {
       background-image: url(../assets/images/cases-final-bg.jpg);
     }
-
   }
 
   &__img {
@@ -343,7 +343,7 @@
       @media screen and (max-width: 1439px) {
         top: 8px;
         left: 228px;
-        width: 80px
+        width: 80px;
       }
 
       @media screen and (max-width: 1023px) {
@@ -433,7 +433,7 @@
   }
 
   &__subtitle {
-    color: #FFF;
+    color: #fff;
     font-size: 36px;
     font-weight: 700;
     line-height: 89%;
@@ -449,7 +449,7 @@
   }
 
   &__brief {
-    color: #FFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     line-height: 170.5%;
@@ -469,7 +469,7 @@
   }
 
   &__type {
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-weight: 250;
     line-height: 100%;
@@ -509,7 +509,7 @@
   }
 
   &__link {
-    color: #FFF;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     line-height: 89%;
@@ -527,7 +527,7 @@
     }
 
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 
@@ -597,7 +597,13 @@
     right: 0;
     width: 128px;
     height: 100%;
-    background: linear-gradient(174deg, #0096E2 -6.64%, #00CDD8 31.81%, #8D5CFE 75.84%, #D50BFF 112.42%);
+    background: linear-gradient(
+      174deg,
+      #0096e2 -6.64%,
+      #00cdd8 31.81%,
+      #8d5cfe 75.84%,
+      #d50bff 112.42%
+    );
 
     @media screen and (max-width: 1023px) {
       top: unset;

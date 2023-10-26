@@ -106,17 +106,16 @@
     margin: 0;
 
     @media screen and (max-width: 1023px) {
-      font-size: 11px;
       line-height: 175%;
-    }
-
-    @media screen and (max-width: 767px) {
-      font-size: 12px;
     }
 
     &_white {
       color: #fff;
       max-width: 264px;
+
+      @media screen and (max-width: 767px) {
+        max-width: unset;
+      }
     }
 
     &_complete {
@@ -327,7 +326,7 @@
     height: 100%;
     color: #fff;
     margin: 0;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     position: relative;
     z-index: 3;
     font-weight: 700;
@@ -391,7 +390,7 @@
 
     @media screen and (max-width: 767px) {
       width: 100%;
-      height: 280px;
+      height: 254px;
     }
   }
 
@@ -467,7 +466,9 @@
     }
 
     @media screen and (max-width: 767px) {
-      font-size: 16px;
+      max-width: 96%;
+      font-size: 20px;
+      line-height: 24px;
       margin-bottom: 26px;
     }
 
@@ -506,7 +507,6 @@
     @media screen and (max-width: 767px) {
       width: 29px;
       height: 29px;
-
     }
   }
 
@@ -514,7 +514,7 @@
     width: 24px;
     height: 24px;
     background: url(../assets/images/checkmark.svg) no-repeat center / contain;
-    opacity: .25;
+    opacity: 0.25;
 
     @media screen and (max-width: 767px) {
       width: 13px;
@@ -571,7 +571,7 @@
     color: #fff;
     box-sizing: border-box;
     border: 2px solid #000;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     @media screen and (max-width: 1023px) {
       width: 190px;
@@ -622,16 +622,17 @@
     position: relative;
     box-sizing: border-box;
     border: 2px solid #000;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     &:hover {
       border-color: #fff;
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
-      background: url(../assets/images/white-arrow.svg) no-repeat center / contain;
+      background: url(../assets/images/white-arrow.svg) no-repeat center /
+        contain;
       width: 25px;
       height: 25px;
     }
@@ -644,7 +645,7 @@
     color: #fff;
     box-sizing: border-box;
     border: 2px solid #000;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     &:hover {
       border-color: #fff;
@@ -661,7 +662,7 @@
     justify-content: center;
     box-sizing: border-box;
     border: 3px solid #000;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     @media screen and (max-width: 1023px) {
       width: 80px;
@@ -736,7 +737,6 @@
     }
   }
 
-
   &__complete {
     position: absolute;
     top: 0;
@@ -793,13 +793,13 @@
     justify-content: center;
     width: 100%;
     height: 52px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
     color: #000;
     margin-top: auto;
     box-sizing: border-box;
     border: 1px solid #fff;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     @media screen and (max-width: 1023px) {
       height: 45px;
