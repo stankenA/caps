@@ -54,7 +54,7 @@
   }
 
   &__title {
-    color: #FFF;
+    color: #fff;
     font-size: 36px;
     font-weight: 500;
     line-height: normal;
@@ -67,7 +67,7 @@
   }
 
   &__txt {
-    color: #FFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
 
@@ -121,7 +121,7 @@
     font-size: 14px;
 
     &::placeholder {
-      color: #A5A5A5;
+      color: #a5a5a5;
     }
   }
 
@@ -138,12 +138,13 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 1440px;
       height: 900px;
-      background: url(../assets/images/bg-development.jpg) no-repeat center / cover;
+      background: url(../assets/images/bg-development.jpg) no-repeat center /
+        cover;
       animation: backgroundRotation 20s infinite linear;
     }
   }
@@ -151,9 +152,15 @@
   &__close {
     width: 36px;
     height: 36px;
-    background: url(../assets/images/close-icon-white.svg) no-repeat center / contain;
+    background: url(../assets/images/close-icon-white.svg) no-repeat center /
+      contain;
     position: absolute;
     top: 20px;
     right: 20px;
+    @include transition;
+
+    &:hover {
+      rotate: 180deg;
+    }
   }
 }

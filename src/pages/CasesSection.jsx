@@ -1,10 +1,44 @@
-import React, { useState } from 'react';
-import { casesArr, observerOptions } from '../utils/constants';
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useState } from "react";
+import { observerOptions } from "../utils/constants";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import firstCaseImg from "../assets/images/cases-img-1.png";
+import jsIcon from "../assets/images/js-icon.svg";
+import CasesContent from "../components/CasesContent";
+
+const casesArr = [
+  {
+    title: "Eagle Flight",
+    txt: "Аренда частного самолета для бизнес поездок и путешествий",
+    img: firstCaseImg,
+    techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
+    link: "#",
+  },
+  {
+    title: "Eagle Fl",
+    txt: "Аренда частного самолета для бизнес поездок и путешествий",
+    img: firstCaseImg,
+    techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
+    link: "#",
+  },
+  {
+    title: "Eagle",
+    txt: "Аренда частного самолета для бизнес поездок и путешествий",
+    img: firstCaseImg,
+    techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
+    link: "#",
+  },
+  {
+    title: "Ea",
+    txt: "Аренда частного самолета для бизнес поездок и путешествий",
+    img: firstCaseImg,
+    techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
+    link: "#",
+  },
+];
 
 export default function CasesSection({ setIsPopupOpened }) {
-
+  const [activeCard, setActiveCard] = useState(0);
   const [isRendered, setIsRendered] = useState(false);
   const { ref, inView } = useInView(observerOptions);
 
@@ -14,74 +48,61 @@ export default function CasesSection({ setIsPopupOpened }) {
     }
   }, [inView]);
 
-  const [activeCard, setActiveCard] = useState(0);
-  function handleNextBtn() {
-    if (casesArr.length - 1 === activeCard) {
-      setActiveCard(0)
-    } else {
-      setActiveCard(activeCard + 1);
-    }
-  }
-
-  function handlePopupOpen(evt) {
-    evt.preventDefault();
+  function handlePopupOpen() {
     setIsPopupOpened(true);
   }
 
   return (
-    <section className={`${isRendered ? 'cases cases_shown' : 'cases'}`} id="cases" ref={ref}>
+    <section
+      className={`${isRendered ? "cases cases_shown" : "cases"}`}
+      id="cases"
+      ref={ref}
+    >
       <div className="cases__card">
         <div className="cases__left">
-          <h2 className="cases__title">
-            КЕЙСЫ
-          </h2>
-          <p className="cases__txt">
-            Узнайте о том, как группа друзей, воплощая мечты клиентов, воплотила свою. В 4-х актах рассказываем о себе и о том, как на свет появилось агентство CAPS.
-          </p>
+          <div className="cases__left-container">
+            <h2 className="cases__title">Кейсы</h2>
+            <p className="cases__title-txt">
+              Ознакомьтесь с примерами наших проектов
+            </p>
+          </div>
+          <button
+            type="button"
+            className="cases__contact"
+            onClick={handlePopupOpen}
+          >
+            свяжитесь с нами
+          </button>
         </div>
-        <ul className="cases__list list">
+        <div className="cases__right">
           {casesArr.map((item, i) => (
-            <li className={`
-              cases__item
-              cases__item_${item.modifier}
-              ${i === activeCard ? 'cases__item_active' : ''}
-              ${i < activeCard ? 'cases__item_shown' : ''}`}
-              style={{ zIndex: Math.floor(100 / (i + 1)) }}
+            <CasesContent
+              caseObj={item}
+              activeCard={activeCard}
+              index={i}
               key={item.title}
-            >
-              {item.img
-                ? item.img.map((img) => (
-                  <img src={img.url} alt={img.name} className={`cases__img cases__img_${img.name}`} key={img.name} />
-                ))
-                : ''}
-              <div className="cases__content">
-                <h3 className="cases__subtitle">
-                  {item.title}
-                </h3>
-                <p className="cases__brief">
-                  {item.brief}
-                </p>
-                <p className="cases__type">
-                  {item.type}
-                </p>
-                <div className="cases__links">
-                  <img src={item.qr} alt="QR-код" className="cases__qr" />
-                  <a href={item.link}
-                    className="cases__link"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={item.action === 'заказать' ? handlePopupOpen : null}
-                  >{item.action}</a>
-                </div>
-              </div>
-            </li>
+            />
           ))}
-        </ul>
-        <button type="button" className="cases__button button" onClick={handleNextBtn}>
-          <span className={`cases__arrow ${activeCard === 1 ? 'cases__arrow_white' : ''}`}></span>
-        </button>
-        <span className="cases__bg"></span>
+        </div>
       </div>
+      <ul className="cases__navigation">
+        {casesArr.map((_, i) => (
+          <li className="cases__nav-item" key={i}>
+            <button
+              type="button"
+              className={`cases__nav-btn ${
+                i === activeCard ? `cases__nav-btn_${i + 1}` : ""
+              }`}
+              onClick={() => setActiveCard(i)}
+            >
+              {i + 1}
+            </button>
+          </li>
+        ))}
+        <li className="cases__nav-item">
+          <button type="button" className="cases__nav-btn"></button>
+        </li>
+      </ul>
     </section>
-  )
+  );
 }

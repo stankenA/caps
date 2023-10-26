@@ -1,5 +1,5 @@
 @mixin props-for-background-rotation {
-  content: '';
+  content: "";
   z-index: 2;
   width: 1400px;
   height: 1400px;
@@ -7,7 +7,7 @@
   display: block;
   opacity: 0;
   visibility: hidden;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   animation: backgroundRotation 30s infinite linear;
 }
 
@@ -19,6 +19,24 @@
   background-blend-mode: screen, difference, normal;
 }
 
-@mixin transition($time: .4s) {
+@mixin transition($time: 0.4s) {
   transition: all $time ease;
+}
+
+@mixin reset-btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  color: unset;
+  text-decoration: none;
 }

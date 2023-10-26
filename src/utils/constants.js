@@ -1,17 +1,17 @@
-import eagleQR from "../assets/images/qr-eagle.png";
-import plane from "../assets/images/plane.png";
+// import eagleQR from "../assets/images/qr-eagle.png";
+// import plane from "../assets/images/plane.png";
 
-import train from "../assets/images/train.png";
-import rzdLogo from "../assets/images/rzd-logo.svg";
+// import train from "../assets/images/train.png";
+// import rzdLogo from "../assets/images/rzd-logo.svg";
 
-import maleFace from "../assets/images/cases-male-face.png";
-import womanFace from "../assets/images/cases-woman-face.png";
-import granny from "../assets/images/cases-granny.png";
-import planet from "../assets/images/cases-planet.png";
-import berry from "../assets/images/cases-berry.png";
-import rocket from "../assets/images/cases-rocket.png";
+// import maleFace from "../assets/images/cases-male-face.png";
+// import womanFace from "../assets/images/cases-woman-face.png";
+// import granny from "../assets/images/cases-granny.png";
+// import planet from "../assets/images/cases-planet.png";
+// import berry from "../assets/images/cases-berry.png";
+// import rocket from "../assets/images/cases-rocket.png";
 
-import capsLogo from "../assets/images/caps-logo-white.svg";
+// import capsLogo from "../assets/images/caps-logo-white.svg";
 
 import whatsappIcon from "../assets/images/whatsapp-icon.svg";
 import vkIcon from "../assets/images/vk-icon.svg";
@@ -26,57 +26,57 @@ import sanyaImg from "../assets/images/sanya.png";
 import slavaImg from "../assets/images/slava.png";
 import dimaImg from "../assets/images/dima.png";
 
-export const casesArr = [
-  {
-    title: "Eagle Flight",
-    brief: "Аренда частного самолета для бизнес поездок и путешествий",
-    type: "Многостраничный сайт описание продукта",
-    img: [{ url: plane, name: "plane" }],
-    qr: eagleQR,
-    action: "ознакомиться",
-    link: "#",
-    modifier: "eagle",
-  },
-  {
-    title: "РЖД СЗППК",
-    brief: "Сайт РЖД блин че еще тут говорить",
-    type: "Многостраничный сайт описание продукта",
-    img: [
-      { url: train, name: "train" },
-      { url: rzdLogo, name: "rzd-logo" },
-    ],
-    qr: eagleQR,
-    action: "ознакомиться",
-    link: "#",
-    modifier: "rzd",
-  },
-  {
-    title: "Хоккейный Пятачок",
-    brief: "Сайт РЖД блин че еще тут говорить",
-    type: "Многостраничный сайт описание продукта",
-    qr: eagleQR,
-    action: "ознакомиться",
-    link: "#",
-    modifier: "hockey",
-  },
-  {
-    title: "Ваш новый сайт",
-    brief: "Такой, каким вы его полюбите",
-    type: "Многостраничный сайт описание продукта",
-    img: [
-      { url: maleFace, name: "male" },
-      { url: womanFace, name: "woman" },
-      { url: granny, name: "granny" },
-      { url: planet, name: "planet" },
-      { url: berry, name: "berry" },
-      { url: rocket, name: "rocket" },
-    ],
-    qr: capsLogo,
-    action: "заказать",
-    link: "#",
-    modifier: "final",
-  },
-];
+// export const casesArr = [
+//   {
+//     title: "Eagle Flight",
+//     brief: "Аренда частного самолета для бизнес поездок и путешествий",
+//     type: "Многостраничный сайт описание продукта",
+//     img: [{ url: plane, name: "plane" }],
+//     qr: eagleQR,
+//     action: "ознакомиться",
+//     link: "#",
+//     modifier: "eagle",
+//   },
+//   {
+//     title: "РЖД СЗППК",
+//     brief: "Сайт РЖД блин че еще тут говорить",
+//     type: "Многостраничный сайт описание продукта",
+//     img: [
+//       { url: train, name: "train" },
+//       { url: rzdLogo, name: "rzd-logo" },
+//     ],
+//     qr: eagleQR,
+//     action: "ознакомиться",
+//     link: "#",
+//     modifier: "rzd",
+//   },
+//   {
+//     title: "Хоккейный Пятачок",
+//     brief: "Сайт РЖД блин че еще тут говорить",
+//     type: "Многостраничный сайт описание продукта",
+//     qr: eagleQR,
+//     action: "ознакомиться",
+//     link: "#",
+//     modifier: "hockey",
+//   },
+//   {
+//     title: "Ваш новый сайт",
+//     brief: "Такой, каким вы его полюбите",
+//     type: "Многостраничный сайт описание продукта",
+//     img: [
+//       { url: maleFace, name: "male" },
+//       { url: womanFace, name: "woman" },
+//       { url: granny, name: "granny" },
+//       { url: planet, name: "planet" },
+//       { url: berry, name: "berry" },
+//       { url: rocket, name: "rocket" },
+//     ],
+//     qr: capsLogo,
+//     action: "заказать",
+//     link: "#",
+//     modifier: "final",
+//   },
+// ];
 
 // Информация, передаваемая в карточки
 export const promotionTitles = [
