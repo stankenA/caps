@@ -3,6 +3,7 @@ import { observerOptions } from "../utils/constants";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import firstCaseImg from "../assets/images/cases-img-1.png";
+import secondCaseImg from "../assets/images/cases-img-2.png";
 import jsIcon from "../assets/images/js-icon.svg";
 import CasesContent from "../components/CasesContent";
 
@@ -17,7 +18,7 @@ const casesArr = [
   {
     title: "Eagle Fl",
     txt: "Аренда частного самолета для бизнес поездок и путешествий",
-    img: firstCaseImg,
+    img: secondCaseImg,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },

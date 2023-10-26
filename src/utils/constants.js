@@ -23,6 +23,7 @@ import androidAndAppleIcon from "../assets/images/androidandapple.svg";
 import audioManagement from "../assets/voices/roblox-death-sound_1.mp3";
 import nikitaImg from "../assets/images/nikitos.png";
 import sanyaImg from "../assets/images/sanya.png";
+import artemImg from "../assets/images/artem.png";
 import slavaImg from "../assets/images/slava.png";
 import dimaImg from "../assets/images/dima.png";
 
@@ -187,7 +188,7 @@ export const aboutArr = [
     audio: audioManagement,
   },
   {
-    img: slavaImg,
+    img: artemImg,
     title: "Артём",
     subtitle: "Местный кек",
     txt: "“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime cumque magnam porro dolorem, recusandae est? Necessitatibus”",

@@ -130,10 +130,14 @@
     font-weight: 600;
     line-height: 100%;
     cursor: pointer;
-    @include transition;
+    // @include transition;
 
     &_1 {
       background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
+    }
+
+    &_2 {
+      background: linear-gradient(103deg, #4396d2 24.34%, #3924bc 99.73%);
     }
   }
 
@@ -166,6 +170,10 @@
 
     &_1 {
       background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
+    }
+
+    &_2 {
+      background: linear-gradient(103deg, #4396d2 24.34%, #3924bc 99.73%);
     }
   }
 
@@ -204,11 +212,21 @@
   &__subtitle {
     font-size: 36px;
     font-weight: 700;
-    background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 0;
+
+    &_1 {
+      background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_2 {
+      background: linear-gradient(103deg, #4396d2 24.34%, #3924bc 99.73%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__txt {
