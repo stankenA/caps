@@ -30,7 +30,7 @@ export default function CasesContent({ caseObj, activeCard, index }) {
             </ul>
           </div>
           <a href={caseObj.link} className="cases__link">
-            Демка
+            ознакомиться
           </a>
         </div>
       </div>

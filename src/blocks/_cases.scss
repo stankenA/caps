@@ -3,7 +3,6 @@
   height: 480px;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
   margin-bottom: 150px;
   @include transition(1.5s);
   transform: translateX(-100%);
@@ -130,7 +129,12 @@
     font-weight: 600;
     line-height: 100%;
     cursor: pointer;
-    // @include transition;
+    @include transition;
+
+    &:hover {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      transform: translateY(-5px);
+    }
 
     &_1 {
       background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
@@ -139,13 +143,38 @@
     &_2 {
       background: linear-gradient(103deg, #4396d2 24.34%, #3924bc 99.73%);
     }
+
+    &_3 {
+      background: linear-gradient(103deg, #ba2121 24.34%, #590c0c 99.73%);
+    }
+
+    &_4 {
+      background: linear-gradient(103deg, #0c2d38 24.52%, #101734 100%);
+    }
+
+    &_5 {
+      background: linear-gradient(103deg, #00632d 24.11%, #003827 100%);
+    }
+
+    &_6 {
+      background: linear-gradient(103deg, #67ab9f 24.11%, #6fb1d7 100%);
+    }
+
+    &_7 {
+      background: linear-gradient(
+        111deg,
+        #fdc77f 1.54%,
+        #ff6fad 38.27%,
+        #3720b1 71.32%
+      );
+    }
   }
 
   &__right {
     height: 100%;
     flex-grow: 1;
     position: relative;
-    background-color: #000;
+    // background-color: #000;
   }
 
   &__content {
@@ -174,6 +203,31 @@
 
     &_2 {
       background: linear-gradient(103deg, #4396d2 24.34%, #3924bc 99.73%);
+    }
+
+    &_3 {
+      background: linear-gradient(103deg, #ba2121 24.34%, #590c0c 99.73%);
+    }
+
+    &_4 {
+      background: linear-gradient(103deg, #0c2d38 24.52%, #101734 100%);
+    }
+
+    &_5 {
+      background: linear-gradient(103deg, #00632d 24.11%, #003827 100%);
+    }
+
+    &_6 {
+      background: linear-gradient(103deg, #67ab9f 24.11%, #6fb1d7 100%);
+    }
+
+    &_7 {
+      background: linear-gradient(
+        111deg,
+        #fdc77f 1.54%,
+        #ff6fad 38.27%,
+        #3720b1 71.32%
+      );
     }
   }
 
@@ -227,6 +281,46 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    &_3 {
+      background: linear-gradient(103deg, #ba2121 24.34%, #590c0c 99.73%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_4 {
+      background: linear-gradient(103deg, #0c2d38 24.52%, #101734 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_5 {
+      background: linear-gradient(103deg, #00632d 24.11%, #003827 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_6 {
+      background: linear-gradient(103deg, #67ab9f 24.11%, #6fb1d7 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_7 {
+      background: linear-gradient(
+        111deg,
+        #fdc77f 1.54%,
+        #ff6fad 38.27%,
+        #3720b1 71.32%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__txt {
@@ -260,6 +354,7 @@
   &__link {
     @include reset-btn;
     @include reset-link;
+    flex-shrink: 0;
     color: #000;
     width: 100%;
     height: 50px;
@@ -270,5 +365,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      box-shadow: none;
+    }
   }
 }
