@@ -531,8 +531,41 @@
   }
 
   &__nav-btn-star {
+    display: block;
     width: 24px;
     height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include transition;
+
+    &_1 {
+      background-image: url(../assets/images/star-1.svg);
+    }
+
+    &_2 {
+      background-image: url(../assets/images/star-2.svg);
+    }
+
+    &_3 {
+      background-image: url(../assets/images/star-3.svg);
+    }
+
+    &_4 {
+      background-image: url(../assets/images/star-4.svg);
+    }
+
+    &_5 {
+      background-image: url(../assets/images/star-5.svg);
+    }
+
+    &_6 {
+      background-image: url(../assets/images/star-6.svg);
+    }
+
+    &_7 {
+      background-image: url(../assets/images/star-active.svg);
+    }
 
     @media screen and (max-width: 767px) {
       width: 18px;
