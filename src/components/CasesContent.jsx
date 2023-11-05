@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-export default function CasesContent({ caseObj, activeCard, index }) {
+export default function CasesContent({
+  caseObj,
+  activeCard,
+  index,
+  isLastCase,
+  handlePopupOpen,
+}) {
   const [isContentOpened, setIsContentOpened] = useState(false);
 
   const isActive = activeCard === index;
@@ -8,7 +14,7 @@ export default function CasesContent({ caseObj, activeCard, index }) {
     <div
       className={`cases__content cases__content_${index + 1} ${
         isActive ? "cases__content_active" : ""
-      }`}
+      } ${isLastCase ? "cases__content_last" : ""}`}
     >
       <div className="cases__content-box">
         <img src={caseObj.img} alt="Превью кейса" className="cases__img" />
@@ -46,9 +52,20 @@ export default function CasesContent({ caseObj, activeCard, index }) {
             alt="Превью кейса"
             className="cases__img-mobile"
           />
-          <a href={caseObj.link} className="cases__link">
-            ознакомиться
-          </a>
+          {isLastCase ? (
+            <button className="cases__contact" onClick={handlePopupOpen}>
+              заказать
+            </button>
+          ) : (
+            <a
+              href={caseObj.link}
+              target="_blank"
+              rel="noreferrer"
+              className="cases__link"
+            >
+              ознакомиться
+            </a>
+          )}
         </div>
       </div>
     </div>

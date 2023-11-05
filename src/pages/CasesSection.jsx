@@ -14,6 +14,7 @@ import fifthCaseImg from "../assets/images/cases-img-5.png";
 import fifthCaseMob from "../assets/images/cases-mob-img-5.png";
 import sixthCaseImg from "../assets/images/cases-img-6.png";
 import sixthCaseMob from "../assets/images/cases-mob-img-6.png";
+import lastCaseImg from "../assets/images/cases-img-last.png";
 import jsIcon from "../assets/images/js-icon.svg";
 import CasesContent from "../components/CasesContent";
 
@@ -69,9 +70,10 @@ const casesArr = [
 ];
 
 const lastCaseObj = {
-  title: "Eagle Flight",
-  txt: "Аренда частного самолета для бизнес поездок и путешествий",
-  img: firstCaseImg,
+  title: "Ваш новый сайт",
+  txt: "Магазин цветов, букетов и подарков",
+  img: lastCaseImg,
+  mobImg: lastCaseImg,
   techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
   link: "#",
 };
@@ -126,6 +128,8 @@ export default function CasesSection({ setIsPopupOpened }) {
             caseObj={lastCaseObj}
             activeCard={activeCard}
             index={casesArr.length}
+            handlePopupOpen={handlePopupOpen}
+            isLastCase
           />
         </div>
       </div>
