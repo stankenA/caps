@@ -15,8 +15,9 @@
   }
 
   @media screen and (max-width: 1023px) {
-    height: 796px;
-    margin-bottom: 80px;
+    flex-direction: column;
+    gap: 15px;
+    height: unset;
   }
 
   &_shown {
@@ -34,8 +35,18 @@
     overflow: hidden;
     box-sizing: border-box;
 
+    @media screen and (max-width: 1439px) {
+      width: calc(100% - 56px);
+    }
+
     @media screen and (max-width: 1023px) {
+      width: 100%;
       flex-direction: column;
+      height: 550px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: unset;
     }
   }
 
@@ -46,21 +57,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-right: 3px solid #000;
 
     @media screen and (max-width: 1439px) {
-      padding-left: 25px;
-      padding-top: 25px;
+      padding: 20px;
       width: 250px;
     }
 
     @media screen and (max-width: 1023px) {
-      width: 55%;
-      padding-bottom: 22px;
-    }
-
-    @media screen and (max-width: 767px) {
       width: 100%;
-      max-width: 250px;
+      border-right: none;
+      border-bottom: 3px solid #000;
     }
   }
 
@@ -101,6 +108,10 @@
     cursor: pointer;
     @include transition;
 
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+
     &:hover {
       background-color: #000;
       color: #fff;
@@ -113,6 +124,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      gap: 12px;
+    }
   }
 
   &__nav-btn {
@@ -130,6 +150,18 @@
     line-height: 100%;
     cursor: pointer;
     @include transition;
+
+    @media screen and (max-width: 1439px) {
+      width: 45px;
+      height: 45px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
 
     &:hover {
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -175,6 +207,12 @@
     flex-grow: 1;
     position: relative;
     // background-color: #000;
+
+    @media screen and (max-width: 767px) {
+      height: 691px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -190,6 +228,19 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-100%);
+
+    @media screen and (max-width: 1439px) {
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      padding: 32px;
+      transform: translateY(100%);
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 140px 23px 23px 23px;
+    }
 
     &_active {
       opacity: 1;
@@ -243,6 +294,15 @@
     height: 235px;
     object-fit: cover;
     display: block;
+
+    @media screen and (max-width: 1439px) {
+      width: 346px;
+      height: 200px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   &__container {
@@ -251,6 +311,14 @@
     display: flex;
     flex-direction: column;
     gap: 19px;
+
+    @media screen and (max-width: 1023px) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__txt-box {
@@ -261,12 +329,47 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     padding: 28px 42px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include transition(0.8s);
+
+    @media screen and (max-width: 1439px) {
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 46px);
+      height: 79px;
+      position: absolute;
+      overflow: hidden;
+      top: 23px;
+      left: 50%;
+      transform: translate(-50%);
+      padding: 21px 26px 62px;
+      justify-content: flex-start;
+    }
+
+    &_opened {
+      @media screen and (max-width: 767px) {
+        height: 381px;
+      }
+    }
   }
 
   &__subtitle {
     font-size: 36px;
     font-weight: 700;
     margin: 0;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      text-align: center;
+    }
 
     &_1 {
       background: linear-gradient(103deg, #5f4632 24.34%, #a58c6d 99.73%);
@@ -328,11 +431,20 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 120%; /* 16.8px */
-    margin: 28px 0 39px;
+    margin: 25px 0 0;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
+    }
 
     &_bold {
       font-weight: 600;
-      margin: 0 0 18px;
+      margin-top: auto;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 45px;
+      }
     }
   }
 
@@ -359,7 +471,7 @@
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     background: #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -368,10 +480,63 @@
     cursor: pointer;
     @include transition;
 
+    @media screen and (max-width: 767px) {
+      height: 42px;
+    }
+
     &:hover {
       background-color: #000;
       color: #fff;
       box-shadow: none;
+    }
+  }
+
+  &__img-mobile {
+    display: none;
+
+    @media screen and (max-width: 1023px) {
+      display: block;
+      margin: 0 auto;
+      width: 156px;
+      position: absolute;
+      right: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      position: static;
+      width: 228px;
+    }
+  }
+
+  &__arrow {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      background: url(../assets/images/arrow-down.svg) no-repeat center /
+        contain;
+      display: block;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      bottom: 9px;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: 0 50%;
+      @include transition;
+    }
+
+    &_opened {
+      rotate: 180deg;
+    }
+  }
+
+  &__nav-btn-star {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: 767px) {
+      width: 18px;
+      height: 18px;
     }
   }
 }
