@@ -3,11 +3,17 @@ import { observerOptions } from "../utils/constants";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import firstCaseImg from "../assets/images/cases-img-1.png";
+import firstCaseMob from "../assets/images/cases-mob-img-1.png";
 import secondCaseImg from "../assets/images/cases-img-2.png";
+import secondCaseMob from "../assets/images/cases-mob-img-2.png";
 import thirdCaseImg from "../assets/images/cases-img-3.png";
+import thirdCaseMob from "../assets/images/cases-mob-img-3.png";
 import fourthCaseImg from "../assets/images/cases-img-4.png";
+import fourthCaseMob from "../assets/images/cases-mob-img-4.png";
 import fifthCaseImg from "../assets/images/cases-img-5.png";
+import fifthCaseMob from "../assets/images/cases-mob-img-5.png";
 import sixthCaseImg from "../assets/images/cases-img-6.png";
+import sixthCaseMob from "../assets/images/cases-mob-img-6.png";
 import jsIcon from "../assets/images/js-icon.svg";
 import CasesContent from "../components/CasesContent";
 
@@ -16,6 +22,7 @@ const casesArr = [
     title: "Eagle Flight",
     txt: "Аренда частного самолета для бизнес поездок и путешествий",
     img: firstCaseImg,
+    mobImg: firstCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },
@@ -23,6 +30,7 @@ const casesArr = [
     title: "Хоккейный Пятачок",
     txt: "Магазин хоккейной экипировки",
     img: secondCaseImg,
+    mobImg: secondCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },
@@ -30,6 +38,7 @@ const casesArr = [
     title: "РЖД",
     txt: "Многостраничный информационный сайт",
     img: thirdCaseImg,
+    mobImg: thirdCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },
@@ -37,6 +46,7 @@ const casesArr = [
     title: "Zoome",
     txt: "Танцевальная студия",
     img: fourthCaseImg,
+    mobImg: fourthCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },
@@ -44,6 +54,7 @@ const casesArr = [
     title: "Unickate",
     txt: "Магазин цветов, букетов и подарков",
     img: fifthCaseImg,
+    mobImg: fifthCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },
@@ -51,6 +62,7 @@ const casesArr = [
     title: "TERAI",
     txt: "Магазин цветов, букетов и подарков",
     img: sixthCaseImg,
+    mobImg: sixthCaseMob,
     techs: [jsIcon, jsIcon, jsIcon, jsIcon, jsIcon, jsIcon],
     link: "#",
   },

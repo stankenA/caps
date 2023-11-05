@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import casesMobImg from "../assets/images/cases-mob-img-1.png";
 
 export default function CasesContent({ caseObj, activeCard, index }) {
   const [isContentOpened, setIsContentOpened] = useState(false);
@@ -43,7 +42,7 @@ export default function CasesContent({ caseObj, activeCard, index }) {
             ></span>
           </div>
           <img
-            src={casesMobImg}
+            src={caseObj.mobImg}
             alt="Превью кейса"
             className="cases__img-mobile"
           />
